@@ -7,6 +7,6 @@
     "package/spritesheet.webp": true,
     "package/pet.json": true
   },
-  "canonical_png_sha256": "8baf4f299fe1fb8ccc5b7d837fa808f1dfd788d046df0627b1248a27669b4aa6",
-  "public_webp_sha256": "7964f3f784cbd3c15d872dc5d43892dc31cfec409edf928d5026d3443e5a94cf"
+  "canonical_png_sha256": "57fc073937e32a297d711c2399634acf8ce6ecbe329f6bf51df3fa378731fe8e",
+  "public_webp_sha256": "470a5cd0d119990c668a100662ec8d1b2095e0866ba63cc80fc61c4424f498c2"
 }

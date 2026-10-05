@@ -3,11 +3,11 @@
 **이 프로젝트는?** doro 캐릭터를 **SVG만으로** 그려 Codex 펫(Pets v2 스프라이트 시트)으로 만든 작업입니다. 이미지 생성 도구는 쓰지 않습니다.
 
 **현재 상태 (2026-10-06)**
-- 사용자 피드백을 8차까지 반영했습니다.
+- 눈·앞머리 겹침, 눈 뒤 얼굴 바탕, 키보드 세 줄 타건 피드백을 반영했습니다.
 - 원본 검증 6종, 공개 패키지 3인 방향 검수, 독립 재현과 시험 설치가 통과했습니다.
 - `~/.codex/pets/doro/`에 설치했습니다.
 - 공개 저장소: `https://github.com/godxxy1229/doro-codex-pet`
-- 공개 패키지: codex-pets `doro-svg`. 기존 로컬 `doro` 설치는 보존합니다.
+- 공개 패키지: codex-pets `doro-svg`. 로컬 `doro`의 설명·선택 상태를 보존하고 시트만 갱신합니다.
 
 상세 규격·리그·연출 설명은 [docs/BUILD.ko.md](docs/BUILD.ko.md)에 있습니다. 영어 빌드 안내는 [docs/BUILD.md](docs/BUILD.md)입니다. 이 문서는 "어디부터 보고, 어떻게 고치고, 무엇을 지켜야 하는지"만 정리합니다.
 
@@ -71,7 +71,7 @@ npm run package:pet            # 공개 패키지 생성; row0 col6 neutral
 **설치**
 1. `npm run package:pet`으로 공개 `doro-svg` 패키지를 생성합니다.
 2. 공개 WebP는 row0 col6에 첫 Idle 셀을 추가합니다. 73개 동작 셀은 `final/`과 픽셀 단위로 같아야 합니다.
-3. 공개 설치는 `~/.codex/pets/doro-svg/`를 사용합니다. 기존 `doro` 폴더와 선택 상태는 덮어쓰지 않습니다.
+3. 공개 설치는 `~/.codex/pets/doro-svg/`를 사용합니다. 기존 `doro`의 manifest와 선택 상태는 유지하고, 사용자가 로컬 반영을 요청하면 시트만 교체합니다.
 4. `optimize → build`를 독립 폴더에서 다시 돌려 동일한 원본 아틀라스가 나오는지 확인합니다.
 
 ## 4. 사용자 연출 지침 (반드시 지킬 것)

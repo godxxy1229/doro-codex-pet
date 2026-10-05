@@ -1,14 +1,14 @@
 {
   "ok": true,
   "checks": {
-    "src/doro-rig.svg": true,
-    "src/poses.mjs": true,
-    "final/spritesheet.png": true,
-    "final/spritesheet.webp": true,
+    "canonical_reports_passed": true,
     "native_manifest_preserved": true,
-    "native_sheet_preserved": true,
-    "all_pixels_outside_neutral_identical": true,
-    "neutral_equals_first_idle": true,
-    "reports_ok": true
-  }
+    "native_sheet_identical": true,
+    "neutral_equals_current_first_idle": true,
+    "public_animation_pixels_equal_canonical": true,
+    "directions_blind_reviewed": true,
+    "jaw_connections_and_exterior_only_ink_passed": true
+  },
+  "canonical_webp_sha256": "6aac93e13601d68b6b9ff5206fbc36703f608d582bde8e6060f0650655368cda",
+  "prepared_public_webp_sha256": "470a5cd0d119990c668a100662ec8d1b2095e0866ba63cc80fc61c4424f498c2"
 }

@@ -1,0 +1,19 @@
+{
+  "pairs": [
+    {"pair":"horizontal-1","A":"screen-right","B":"screen-left","reason":"A's eyes and mouth favor the right side inside the hair outline; B's facial center favors the left side."},
+    {"pair":"horizontal-2","A":"screen-right","B":"screen-left","reason":"A shows a fuller left cheek with rightward features, while B's eye pair and mouth sit leftward."},
+    {"pair":"horizontal-3","A":"screen-right","B":"screen-left","reason":"A's face turns toward the right hair edge; B's features are displaced toward screen-left."},
+    {"pair":"horizontal-4","A":"screen-left","B":"screen-right","reason":"A's eye pair and mouth are placed farther left in the head; B exposes more left cheek and shifts the features rightward."},
+    {"pair":"horizontal-5","A":"screen-right","B":"screen-left","reason":"A's features favor the right cheek, while B's face sits toward the left side of the hair silhouette."},
+    {"pair":"horizontal-6","A":"screen-left","B":"screen-right","reason":"A has a leftward facial center; B's eye pair and mouth move toward the right side."},
+    {"pair":"horizontal-7","A":"screen-right","B":"screen-left","reason":"The turn is subtle, but A's features sit rightward relative to the head and B's sit leftward."},
+    {"pair":"vertical-1","A":"up","B":"down","reason":"A's eyes and mouth sit higher below the crown; B's face is lowered farther beneath the fringe."},
+    {"pair":"vertical-2","A":"down","B":"up","reason":"A's facial center is lower relative to the hair crown; B's eyes and mouth are lifted within the head."},
+    {"pair":"vertical-3","A":"down","B":"up","reason":"A's eye pair and mouth fall lower under the bangs, while B's raised features read as looking up."},
+    {"pair":"vertical-4","A":"up","B":"down","reason":"A's face sits higher beneath the crown, while B's eyes and mouth sit lower beneath the fringe."},
+    {"pair":"vertical-5","A":"down","B":"up","reason":"A's lower facial placement and fringe overlap suggest down; B's raised eye pair and mouth suggest up."},
+    {"pair":"vertical-6","A":"down","B":"up","reason":"A's features are visibly lower within the head; B's face is lifted relative to its hair outline."},
+    {"pair":"vertical-7","A":"up","B":"down","reason":"A has higher facial placement beneath the crown; B's eyes and mouth fall lower under the bangs."}
+  ],
+  "notes": "Fresh final-artifact review of all four sheets: all fourteen direction differences are readable, with horizontal-7 the most subtle. The chin curves appear smooth and continuous. I see no conspicuous right cheek or jaw bumps, contour intrusion, or open gaps. Short dark arcs above some eye rims merge with the fringe edges, but I see no clearly detached eyebrow traces drawn across pink hair. Upper eyes are partly occluded by bangs in a consistent, plausible way; no clearly unnatural eye or hair clipping is visible."
+}

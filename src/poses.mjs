@@ -14,6 +14,8 @@ export const PIVOTS = {
   'leg-front-right': [171, 324],
   'leg-back': [271, 306],
   head: [169, 271], // 턱 아래
+  bangs: [143, 114],
+  'fringe-contour-underlay': [0, 180],
   'hair-side-left': [100, 118],
   'hair-side-right': [171, 114],
   'ribbon-tails': [267, 185],
@@ -45,6 +47,16 @@ export const LOOK = {
   labels: ['000', '022.5', '045', '067.5', '090', '112.5', '135', '157.5', '180', '202.5', '225', '247.5', '270', '292.5', '315', '337.5'],
 };
 
+// 키 중심(키보드 자체 좌표): 같은 값으로 불빛과 앞발 접점을 만든다.
+export const TYPING_KEYS = [
+  { id: 'key-1', hand: 'left', x: 102, y: 336, row: 'upper' },
+  { id: 'key-4', hand: 'right', x: 175, y: 343, row: 'middle' },
+  { id: 'key-2', hand: 'left', x: 91, y: 350, row: 'lower' },
+  { id: 'key-5', hand: 'right', x: 183, y: 336, row: 'upper' },
+  { id: 'key-3', hand: 'left', x: 80, y: 343, row: 'middle' },
+  { id: 'key-6', hand: 'right', x: 175, y: 350, row: 'lower' },
+];
+
 const TAU = Math.PI * 2;
 const { sin, cos, max } = Math;
 const px = (v) => v / SCALE; // 셀 픽셀 → 격자 단위
@@ -57,10 +69,30 @@ function add(p, id, t) {
   return p;
 }
 // 시선: 눈·속눈썹·입·눈물을 함께 옮기고 홍조는 조금 덜 옮긴다(머리를 돌리는 느낌).
-function gaze(p, dx, dy) {
+function gaze(p, dx, dy, { fixedBlush = false } = {}) {
   for (const id of ['eyes', 'lashes', 'tears', 'mouth']) add(p, id, { tx: dx, ty: dy });
-  for (const id of ['blush-left', 'blush-right']) add(p, id, { tx: dx * 0.6, ty: dy * 0.6 });
+  if (!fixedBlush) for (const id of ['blush-left', 'blush-right']) add(p, id, { tx: dx * 0.6, ty: dy * 0.6 });
   return p;
+}
+
+function faceDetails(p) {
+  p.show.push('face-details');
+  p.lashesBehindHair = true;
+  fixJaw(p);
+  if (p.fringeYScale != null) add(p, 'fringe-contour-underlay', { sy: p.fringeYScale });
+  return p;
+}
+function fixJaw(p) { p.show.push('jaw-contour', 'jaw-skin-fill'); p.fixedJaw = true; return p; }
+
+function typingContact(p, key) {
+  const id = `leg-front-${key.hand}`;
+  const contact = key.hand === 'left' ? [96, 337] : [185, 361];
+  const a = 12 * Math.PI / 180;
+  // 발끝은 같은 키의 뒤쪽 절반을 누른다. 앞쪽에 남은 불빛으로 눌린 키가 읽힌다.
+  const contactY = key.y - 3;
+  const target = [128 + (key.x - 128) * cos(a) - (contactY - 342) * sin(a),
+    342 + (key.x - 128) * sin(a) + (contactY - 342) * cos(a)];
+  add(p, id, { tx: target[0] - contact[0], ty: target[1] - contact[1] });
 }
 // 옆머리: 양쪽이 바깥(+)/안쪽(−)으로 함께 흔들림
 function hair(p, outward) {
@@ -78,7 +110,7 @@ const STATES = {
     add(p, 'head', { ty: 4 * k, r: 2 * k });
     hair(p, 2.5 * k);
     add(p, 'ribbon-tails', { r: 6 * k });
-    return p;
+    return fixJaw(p);
   },
 
   // 왼쪽으로 종종걸음: 다리 교대 ±17°, 한 주기 두 번 튐, 앞으로 기울기, 머리카락·리본 지연
@@ -109,7 +141,7 @@ const STATES = {
     add(p, 'leg-front-left', { r: [35, 90, 65, 20][i] });
     hair(p, [1, 3, 4, 2][i]);
     add(p, 'ribbon-tails', { r: [3, 8, 10, 5][i] });
-    return p;
+    return fixJaw(p);
   },
 
   // 웅크림 → 상승 → 정점 → 하강 → 착지(같은 기준선)
@@ -123,7 +155,7 @@ const STATES = {
     add(p, 'leg-back', { r: [-6, 10, -8, -10, -3][i] });
     hair(p, [-1, -3, 4, 6, -2][i]);
     add(p, 'ribbon-tails', { r: [-3, -7, 10, 13, -4][i] });
-    return p;
+    return fixJaw(p);
   },
 
   // 눈을 뜬 채 우는 슬픔 루프: 눈물·처진 속눈썹, 머리를 떨군 채 두 번 흐느낌. 입은 평소 :3 그대로.
@@ -151,9 +183,11 @@ const STATES = {
     add(p, 'head', { r: [5, 7, 8, 8, 7, 6][i], ty: -3 * tap });
     add(p, 'leg-front-left', { r: 45 * tap });
     add(p, 'doro', { ty: -px(4) * tap, sy: tap ? 1.02 : 0.98, sx: tap ? 0.99 : 1.01 });
-    add(p, 'eye-left', { sx: 1.08, sy: 1.08 });
-    add(p, 'eye-right', { sx: 1.08, sy: 1.08 });
-    gaze(p, 6, -3);
+    add(p, 'eye-left', { sx: 1.04, sy: 1.04 });
+    add(p, 'eye-right', { sx: 1.04, sy: 1.04 });
+    gaze(p, 4, -1, { fixedBlush: true });
+    p.fringeYScale = tap ? 0.82 : 0.86;
+    faceDetails(p);
     hair(p, [1, 3.5, 1.5, 4, 1.5, 1][i]);
     add(p, 'ribbon-tails', { r: [2, 7, 3, 8, 3, 2][i] });
     return p;
@@ -162,20 +196,15 @@ const STATES = {
   // 키보드 타이핑: 앞발 두 개가 번갈아 누르고 누른 키가 밝아짐. 머리를 숙여 키보드를 봄.
   running(i) {
     const p = pose();
-    const key = ['key-1', 'key-4', 'key-2', 'key-5', 'key-3', 'key-6'][i];
-    p.show.push('keyboard', key);
-    const leftDown = i % 2 === 0;
-    const shift = [-13, -10, 8, 11, -2, 0][i]; // 누르는 앞발을 키 위치로(키보드 방향)
-    if (leftDown) {
-      add(p, 'leg-front-left', { tx: shift, ty: shift * 0.2 });
-      add(p, 'leg-front-right', { r: 8, ty: -13 });
-    } else {
-      add(p, 'leg-front-right', { tx: shift, ty: shift * 0.2 - 4 });
-      add(p, 'leg-front-left', { r: 10, ty: -12 });
-    }
+    const key = TYPING_KEYS[i];
+    p.show.push('keyboard', key.id);
+    const leftDown = key.hand === 'left';
+    typingContact(p, key);
+    add(p, leftDown ? 'leg-front-right' : 'leg-front-left', { r: leftDown ? 8 : 10, ty: leftDown ? -13 : -12 });
     add(p, 'doro', { r: -2, sy: 0.99 });
     add(p, 'head', { ty: 9 + (leftDown ? 3 : 0), r: leftDown ? -4 : -2 });
-    gaze(p, -6, 9);
+    gaze(p, -6, 9, { fixedBlush: true });
+    faceDetails(p);
     hair(p, leftDown ? -1.5 : 1);
     add(p, 'ribbon-tails', { r: leftDown ? -3 : 2 });
     return p;
@@ -203,12 +232,13 @@ const STATES = {
   look(i) {
     const th = (i * 22.5 * Math.PI) / 180;
     // 위쪽은 앞머리에 눈이 가려지므로 조금 덜 올린다.
-    const dx = 24 * sin(th), dy = -(cos(th) > 0 ? 14 : 18) * cos(th);
+    const dx = 12 * sin(th), dy = -(cos(th) > 0 ? 5 : 10) * cos(th);
     const p = pose();
-    gaze(p, dx, dy);
-    add(p, 'head', { tx: 0.4 * dx, ty: 0.4 * dy, r: 4 * sin(th) });
-    add(p, 'hair-side-left', { r: -2.5 * sin(th) });
-    add(p, 'hair-side-right', { r: -2.5 * sin(th) });
+    gaze(p, dx, dy, { fixedBlush: true });
+    add(p, 'head', { tx: 0.85 * dx, ty: 0.85 * dy, r: 4 * sin(th) });
+    p.fringeYScale = 0.86 - 0.08 * max(0, cos(th));
+    hair(p, 4 * Math.abs(sin(th)));
+    faceDetails(p);
     add(p, 'ribbon-tails', { r: -5 * sin(th) });
     return p;
   },

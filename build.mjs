@@ -7,6 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import { CELL, PIVOTS, ROWS, LOOK, framePose } from './src/poses.mjs';
+import { ORIGINAL_JAW } from './tools/rig-parts.mjs';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const rig = fs.readFileSync(path.join(root, 'src/doro-rig.svg'), 'utf8');
@@ -32,6 +33,55 @@ function partTransform(id, p) {
 // 포즈 객체 → 프레임 SVG 문자열
 export function frameSvg(pose) {
   let s = rig;
+  if (pose.lashesBehindHair) {
+    const open = s.match(/<g id="lashes"[^>]*>/), groups = /<(\/?)g\b[^>]*?(\/?)>/g;
+    groups.lastIndex = open.index;
+    let depth = 0, token, end;
+    while ((token = groups.exec(s))) {
+      if (token[2]) continue;
+      depth += token[1] ? -1 : 1;
+      if (depth === 0) { end = token.index + token[0].length; break; }
+    }
+    const lashes = s.slice(open.index, end);
+    s = s.slice(0, open.index) + s.slice(end);
+    s = s.replace('<g id="bangs"', `${lashes}<g id="bangs"`);
+  }
+  if (pose.fixedJaw) {
+    // Remove only the original moving subpath, not its fixed replacement.
+    const pattern = `q5-9 7-21${ORIGINAL_JAW}`;
+    if (!s.includes(pattern)) throw new Error('Original moving jaw contour not found.');
+    s = s.replace(pattern, 'q5-9 7-21');
+    const lockPoint = (id, x, y) => {
+      const [cx, cy] = PIVOTS[id], a = (pose.parts?.[id]?.r ?? 0) * Math.PI / 180;
+      return [f2(cx + (x - cx) * Math.cos(a) - (y - cy) * Math.sin(a)),
+        f2(cy + (x - cx) * Math.sin(a) + (y - cy) * Math.cos(a))];
+    };
+    const left = lockPoint('hair-side-left', 80, 267), right = lockPoint('hair-side-right', 162, 272);
+    // Smooth lower skin boundary; the side endpoints meet their hair locks.
+    const bottom = `L${right}C${f2(right[0] - 12)},${f2(right[1] + 3)} 144,275 124,275C106,275 ${f2(left[0] + 14)},${f2(left[1] + 7)} ${left}`;
+    s = s.replace(/(<path\b[^>]*id="jaw-skin-boundary"[^>]* d=")[^"]*/,
+      `$1M0,0H400V242${bottom}L0,242Z`);
+    s = s.replace(/(<path\b[^>]*id="jaw-skin-fill"[^>]* d=")[^"]*/,
+      `$1M${left[0]},240H${right[0]}V242${bottom}L${left[0]},242Z`);
+    s = s.replace('<g id="face">', '<g id="face" clip-path="url(#jaw-skin-clip)">');
+  }
+  // 정수리는 고정하고 앞머리 아래쪽만 짧게 당긴다. 전체 이동으로 생기는 정수리 이음새를 피한다.
+  if (pose.fringeYScale != null) {
+    const open = s.match(/<g id="bangs"[^>]*>/);
+    const groups = /<(\/?)g\b[^>]*?(\/?)>/g;
+    groups.lastIndex = open.index;
+    let depth = 0, token, end;
+    while ((token = groups.exec(s))) {
+      if (token[2]) continue;
+      depth += token[1] ? -1 : 1;
+      if (depth === 0) { end = token.index + token[0].length; break; }
+    }
+    const content = s.slice(open.index + open[0].length, end - 4);
+    const yScale = f2(pose.fringeYScale);
+    const corrected = `${open[0]}<g clip-path="url(#fringe-upper)">${content}</g>`
+      + `<g transform="translate(0 180) scale(1 ${yScale}) translate(0 -180)"><g clip-path="url(#fringe-lower)">${content}</g></g></g>`;
+    s = s.slice(0, open.index) + corrected + s.slice(end);
+  }
   for (const [id, p] of Object.entries(pose.parts ?? {})) {
     const tr = partTransform(id, p);
     if (!tr) continue;
@@ -48,15 +98,18 @@ export function frameSvg(pose) {
   const show = [...(pose.show ?? [])];
   if (rot('hair-side-left') > 0.3) show.push('hsl-under', 'fsl-under');
   if (rot('hair-side-right') < -0.3) show.push('hsr-under', 'fsr-under');
+  if (pose.fixedJaw && rot('hair-side-left') > 0.3) show.push('jaw-left-extension');
+  if (pose.fixedJaw && rot('hair-side-right') < -0.3) show.push('jaw-right-extension');
   for (const id of show) {
     const m = s.match(new RegExp(`<[a-z]+\\b[^>]*? id="${id}"[^>]*>`));
     if (!m || !m[0].includes(' display="none"')) throw new Error(`hidden part not found: ${id}`);
     s = s.slice(0, m.index) + m[0].replace(' display="none"', '') + s.slice(m.index + m[0].length);
   }
   for (const id of pose.hide ?? []) {
-    const re = new RegExp(`(<[a-z]+\\b[^>]*? id="${id}")`);
-    if (!re.test(s)) throw new Error(`part not found: ${id}`);
-    s = s.replace(re, '$1 display="none"');
+    const re = new RegExp(`<[a-z]+\\b[^>]*? id="${id}"[^>]*>`);
+    const match = s.match(re);
+    if (!match) throw new Error(`part not found: ${id}`);
+    if (!match[0].includes(' display="none"')) s = s.replace(re, match[0].replace(` id="${id}"`, ` id="${id}" display="none"`));
   }
   // 셀 배치: 400 격자 → 192×208
   const { scale, ox, oy } = CELL;
@@ -146,4 +199,6 @@ async function main() {
   console.log('wrote final/spritesheet.png, final/spritesheet.webp');
 }
 
-main().catch((e) => { console.error(e); process.exitCode = 1; });
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((e) => { console.error(e); process.exitCode = 1; });
+}

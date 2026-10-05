@@ -1,7 +1,10 @@
 // 원본에 없는 리그 조각 (400×400 격자, tools/optimize.mjs가 삽입)
 // - 보강: 큰 동작에서 이음새가 보이지 않게 하는 숨은 면·선 (기본 자세에서는 가려짐)
 // - 표정·도구: display="none"으로 넣고 build.mjs가 프레임마다 켠다
+import { TYPING_KEYS } from '../src/poses.mjs';
 const INK = '#1f1519';
+// Original jaw subpath lives in the right hair group; revised faces keep it on the head.
+export const ORIGINAL_JAW = 'M187 266c-8 1-14 7-21 8l-14-1-29 1q-22-2-42-7';
 
 // 밑면 클립
 // hc: 머리카락 밑면 — 정수리·관자놀이 이음새(y<215)만. 피부 밑면이 그 위에 그려지므로 얼굴이 있는 곳은 피부가 덮고,
@@ -9,10 +12,44 @@ const INK = '#1f1519';
 // fcl·fcr: 피부 밑면 — 왼쪽·오른쪽 볼 옆 구간만. 아래는 턱선 위까지(몸통 위로 새지 않게).
 export const DEFS = '<clipPath id="hc"><path d="M44 0H205V215H44z"/></clipPath>'
   + '<clipPath id="fcl"><path d="M30 180h70v84H30z"/></clipPath><clipPath id="fcr"><path d="M150 180h65v90h-65z"/></clipPath>'
+  + '<clipPath id="face-detail-clip"><use href="#face-skin"/></clipPath>'
+  + '<clipPath id="fringe-upper"><path d="M0 0H400V180.5H0Z"/></clipPath>'
+  + '<clipPath id="fringe-lower"><path d="M0 179.5H400V400H0Z"/></clipPath>'
+  + '<clipPath id="jaw-lower"><path d="M0 242H400V280H0Z"/></clipPath>'
+  + '<clipPath id="jaw-skin-clip"><path id="jaw-skin-boundary" d="M0 0H400V400H0Z"/></clipPath>'
+  + `<filter id="jaw-outline-filter" filterUnits="userSpaceOnUse" x="20" y="160" width="210" height="130"><feMorphology in="SourceAlpha" operator="dilate" radius="2.5" result="expanded"/><feComposite in="expanded" in2="SourceAlpha" operator="out" result="border"/><feFlood flood-color="${INK}" result="ink"/><feComposite in="ink" in2="border" operator="in"/></filter>`
+  + '<radialGradient id="face-tint"><stop stop-color="#f2b4c3" stop-opacity=".28"/><stop offset="1" stop-color="#f2b4c3" stop-opacity="0"/></radialGradient>'
   // lens: 돋보기 렌즈 안쪽(렌즈 중심 = 왼쪽 눈 중심 94,217, 테 안쪽 반지름 38.5)
   + '<clipPath id="lens"><circle cx="94" cy="217" r="38.5"/></clipPath>';
 
 export const PARTS = [
+  {
+    anchor: 'face', where: 'before',
+    // Dilate the union of all face fills and subtract its interior before colouring the border.
+    // This also closes the clipped underlay edges without drawing a line inside the cheek.
+    svg: `<g id="jaw-contour" display="none" clip-path="url(#jaw-lower)"><g filter="url(#jaw-outline-filter)"><g clip-path="url(#jaw-skin-clip)">
+      <use href="#face-skin"/>
+      <use href="#jaw-skin-fill"/>
+      <g id="jaw-left-extension" display="none" clip-path="url(#fcl)"><use href="#face-skin" x="-14"/></g>
+      <g id="jaw-right-extension" display="none" clip-path="url(#fcr)"><use href="#face-skin" x="14"/></g>
+    </g></g></g>`,
+  },
+  {
+    anchor: 'face', where: 'prepend',
+    svg: '<path id="jaw-skin-fill" display="none" fill="#fef7f4" d="M40 240H210V276H40Z"/>',
+  },
+  // 눈 뒤의 얼굴 바탕. 원본 앞머리 윤곽에서 눈에 가려져 생략된 구간을 같은 검은 선으로 잇는다.
+  // 원본 앞머리·눈 레이어 순서를 보존하고 해당 세 상태에서만 켠다.
+  {
+    anchor: 'eyes', where: 'before',
+    svg: `<g id="face-details" display="none" clip-path="url(#face-detail-clip)">
+      <ellipse cx="93" cy="224" rx="25" ry="22" fill="url(#face-tint)"/>
+      <ellipse cx="164" cy="238" rx="24" ry="23" fill="url(#face-tint)"/>
+      <g id="fringe-contour-underlay" fill="none" stroke="${INK}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M80,204C82,201 83,197.5 84,195M99,199C102,204 107.5,210 113,214M149,210C150.5,208.5 152.5,207 154,206M175,208C178,211 184,212 188.4,211.6"/>
+      </g>
+    </g>`,
+  },
   // 다리 윗부분의 몸통 경계선. 다리 아래 레이어라 평소엔 다리에 가려지고,
   // 다리를 크게 돌리거나 숨기면(앞발 들기) 몸통 밑선이 끊기지 않게 드러난다.
   {
@@ -80,12 +117,7 @@ export const PARTS = [
       <rect x="53" y="329" width="150" height="26" rx="5" fill="#5b6472"/>
       <path fill="none" stroke="#a9b3bf" stroke-width="4.5" stroke-dasharray="8 3" d="M61,336H195M61,343H195M67,350H189"/>
       <g fill="#fff2a6" stroke="none">
-        <rect id="key-1" display="none" x="78" y="347" width="8" height="6"/>
-        <rect id="key-2" display="none" x="100" y="347" width="8" height="6"/>
-        <rect id="key-3" display="none" x="89" y="347" width="8" height="6"/>
-        <rect id="key-4" display="none" x="164" y="347" width="8" height="6"/>
-        <rect id="key-5" display="none" x="185" y="347" width="8" height="6"/>
-        <rect id="key-6" display="none" x="175" y="347" width="8" height="6"/>
+        ${TYPING_KEYS.map((key) => `<rect id="${key.id}" display="none" x="${key.x - 4}" y="${key.y - 3}" width="8" height="6"/>`).join('')}
       </g>
     </g>`,
   },

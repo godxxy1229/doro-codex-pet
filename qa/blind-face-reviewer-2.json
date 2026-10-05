@@ -1,0 +1,19 @@
+{
+  "pairs": [
+    {"pair":"horizontal-1","A":"screen-right","B":"screen-left","reason":"A's mouth and eyes sit toward the right front lock within the hair; B's eye-and-mouth group sits closer to the left fringe."},
+    {"pair":"horizontal-2","A":"screen-right","B":"screen-left","reason":"A's facial features cluster on the right side of the visible face; B's features cluster toward the left cheek and fringe."},
+    {"pair":"horizontal-3","A":"screen-right","B":"screen-left","reason":"A's mouth and right eye approach the right lock, leaving a wider left cheek; B's eye-and-mouth group sits farther left beneath the bangs."},
+    {"pair":"horizontal-4","A":"screen-left","B":"screen-right","reason":"A's eyes and mouth lie close to the left fringe; B's features sit toward the right lock and expose more white face on the left."},
+    {"pair":"horizontal-5","A":"screen-right","B":"screen-left","reason":"A's feature group sits toward the right cheek edge; B's eye-and-mouth group is displaced left inside the hair silhouette."},
+    {"pair":"horizontal-6","A":"screen-left","B":"screen-right","reason":"A's mouth and eyes lean toward the left face edge; B's corresponding features lean toward the right hair lock."},
+    {"pair":"horizontal-7","A":"screen-right","B":"screen-left","reason":"A's eyes and mouth sit farther right within the front hair; B's facial features sit nearer the left fringe and cheek."},
+    {"pair":"vertical-1","A":"up","B":"down","reason":"A's eye line and mouth are raised toward the fringe, leaving more white face beneath the mouth; B's eyes and mouth descend closer to the lower face outline."},
+    {"pair":"vertical-2","A":"down","B":"up","reason":"A's eyes and mouth sit lower under the bangs and closer to the chin; B's feature group sits visibly higher in the face."},
+    {"pair":"vertical-3","A":"down","B":"up","reason":"A's eye line and mouth occupy the lower face; B's eyes and mouth rise toward the bangs and leave more white space beneath them."},
+    {"pair":"vertical-4","A":"up","B":"down","reason":"A's eye line and mouth are slightly higher relative to the fringe; B's right eye and mouth sit lower toward the chin edge. The difference is small."},
+    {"pair":"vertical-5","A":"down","B":"up","reason":"A's eye-and-mouth group sits lower near the cheek and chin contour; B's eyes and mouth are raised toward the fringe."},
+    {"pair":"vertical-6","A":"down","B":"up","reason":"A's eyes and mouth are visibly lower within the face; B's feature group sits higher beneath the bangs."},
+    {"pair":"vertical-7","A":"up","B":"down","reason":"A's eye line and mouth sit a little higher; B's eye-and-mouth group lies lower and its mouth is closer to the lower face edge. The difference is subtle."}
+  ],
+  "notes":"All 14 pairs are directionally readable; vertical-4 and vertical-7 have the smallest visible separation. The right chin contours appear smooth, and the lower cheek outlines meet the front hair locks without an obvious open gap or inward cheek-cutting stroke. No clear detached eyebrow-like marks are visible over the pink hair. Some upper eye rims closely meet the dark fringe contour, especially in down-facing views, but both irises remain readable and no severe eye occlusion or unnatural clipping is evident at this sheet scale."
+}

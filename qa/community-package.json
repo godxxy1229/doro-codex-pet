@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "canonical_sha256": "a19f4c087fd4191ba351c13d5f26e4937f0b30362b07dce1e700c6b70e57916f",
-  "public_sha256": "7964f3f784cbd3c15d872dc5d43892dc31cfec409edf928d5026d3443e5a94cf",
+  "canonical_sha256": "6aac93e13601d68b6b9ff5206fbc36703f608d582bde8e6060f0650655368cda",
+  "public_sha256": "470a5cd0d119990c668a100662ec8d1b2095e0866ba63cc80fc61c4424f498c2",
   "dimensions": [
     1536,
     2288
@@ -17,6 +17,6 @@
   ],
   "lossless_rgba_match": true,
   "animation_pixels_preserved": true,
-  "canonical_rgba_sha256": "70069a86a9a487b590334689794217009e60fba1b53518414c669932ceb6f583",
-  "public_rgba_sha256": "04a960950667d2a3268d66d371ea2d3bcbb44099d7cf93af41698867e62af93b"
+  "canonical_rgba_sha256": "adb4f6d5dd8e6fc3ce09cb29e2d0dd17b57c383e2ef9fce30891b73db1831a6a",
+  "public_rgba_sha256": "0ac5313503294ee0899f637bf07a14adf4bf5fa9903483ef19183ead320253a0"
 }

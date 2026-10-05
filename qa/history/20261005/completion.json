@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "repository": "https://github.com/godxxy1229/doro-codex-pet",
+  "community_page": "https://codex-pets.net/#/pets/doro-svg",
+  "canonical_png_sha256": "8baf4f299fe1fb8ccc5b7d837fa808f1dfd788d046df0627b1248a27669b4aa6",
+  "public_webp_sha256": "7964f3f784cbd3c15d872dc5d43892dc31cfec409edf928d5026d3443e5a94cf",
+  "checks": {
+    "canonical_six_validation_reports_passed": true,
+    "public_blind_reviewers": 3,
+    "public_blind_pairs_passed": 14,
+    "independent_rebuild_identical": true,
+    "downloaded_public_manifest_identical": true,
+    "downloaded_public_webp_identical": true,
+    "official_installer_test_passed": true,
+    "preexisting_native_doro_preserved": true,
+    "no_temporary_api_key_created": true
+  },
+  "source_bundle": "doro-source-and-validation.zip"
+}

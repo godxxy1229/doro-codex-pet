@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "checks": {
+    "src/doro-rig.svg": true,
+    "src/poses.mjs": true,
+    "final/spritesheet.png": true,
+    "final/spritesheet.webp": true,
+    "native_manifest_preserved": true,
+    "native_sheet_preserved": true,
+    "all_pixels_outside_neutral_identical": true,
+    "neutral_equals_first_idle": true,
+    "reports_ok": true
+  }
+}

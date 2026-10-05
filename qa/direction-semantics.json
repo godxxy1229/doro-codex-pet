@@ -1,5 +1,5 @@
 {
-  "review_basis": "Final encoded spritesheet.webp, qa/direction-qa.png and 2x native crops of rows 9-10 reviewed against idle frame 0. Doro has drawn anime eyes without sclera, so gaze is expressed as a head turn: the whole face-feature set (eyes, lashes, mouth, blush) moves inside the fixed face, the head group follows by 0.4x with a small tilt, side hair and ribbon tails lag the other way, and the body and legs stay anchored.",
+  "review_basis": "Final encoded atlas and labeled native-size sheet visually reviewed. Three independent blind reviewers classified all horizontal and vertical pairs; combined verdicts passed without warnings. Eyes/lashes/mouth move in the head; stationary blush and fine hair lines fill the exposed skin behind the eyes. The crown stays fixed while the lower fringe shortens slightly, side locks open outward, and the head follows the gaze.",
   "alpha_review": "Transparent rows reported near y=176-184 are the open spaces between the separate legs below the body, continuous with the outside background. The face, hair and body surfaces have no accidental holes: when a side-hair lock swings outward, the cheek it uncovers is filled with a face-skin copy shifted outward (so the cheek continues in skin colour) and the crown/temple seam with a static hair copy; both underlays are switched off when the lock swings inward so no colour shows outside the outline.",
   "directions": [
     {
@@ -7,112 +7,114 @@
       "expected": "up",
       "observed": "up",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 0.0px horizontally (centered) and 10.6px up from idle 0 inside the face (blush follows at 0.6x); head tilts +0.0 deg and shifts with them; body, legs and feet stay on the idle baseline. Irises rise under the bangs while staying visible; lower face shows more empty skin."
+      "evidence": "Eyes, lashes and :3 mouth translate +0.00px horizontally and -2.70px vertically inside the head; head follows by 0.85x and tilts +0.00 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support up, consistent with independent blind axis judgments."
     },
     {
       "label": "022.5",
       "expected": "up-right",
       "observed": "up-right",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 6.9px right and 9.8px up from idle 0 inside the face (blush follows at 0.6x); head tilts +1.5 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate +2.48px horizontally and -2.49px vertically inside the head; head follows by 0.85x and tilts +1.53 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support up-right, consistent with independent blind axis judgments."
     },
     {
       "label": "045",
       "expected": "up-right",
       "observed": "up-right",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 12.8px right and 7.5px up from idle 0 inside the face (blush follows at 0.6x); head tilts +2.8 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate +4.58px horizontally and -1.91px vertically inside the head; head follows by 0.85x and tilts +2.83 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support up-right, consistent with independent blind axis judgments."
     },
     {
       "label": "067.5",
       "expected": "up-right",
       "observed": "up-right",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 16.8px right and 4.1px up from idle 0 inside the face (blush follows at 0.6x); head tilts +3.7 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate +5.99px horizontally and -1.03px vertically inside the head; head follows by 0.85x and tilts +3.70 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support up-right, consistent with independent blind axis judgments."
     },
     {
       "label": "090",
       "expected": "right",
       "observed": "right",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 18.1px right and 0.0px vertically (level) from idle 0 inside the face (blush follows at 0.6x); head tilts +4.0 deg and shifts with them; body, legs and feet stay on the idle baseline. Right eye moves toward the right side hair, left eye moves to the face centre."
+      "evidence": "Eyes, lashes and :3 mouth translate +6.48px horizontally and -0.00px vertically inside the head; head follows by 0.85x and tilts +4.00 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support right, consistent with independent blind axis judgments."
     },
     {
       "label": "112.5",
       "expected": "down-right",
       "observed": "down-right",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 16.8px right and 5.2px down from idle 0 inside the face (blush follows at 0.6x); head tilts +3.7 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate +5.99px horizontally and +2.07px vertically inside the head; head follows by 0.85x and tilts +3.70 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support down-right, consistent with independent blind axis judgments."
     },
     {
       "label": "135",
       "expected": "down-right",
       "observed": "down-right",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 12.8px right and 9.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts +2.8 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate +4.58px horizontally and +3.82px vertically inside the head; head follows by 0.85x and tilts +2.83 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support down-right, consistent with independent blind axis judgments."
     },
     {
       "label": "157.5",
       "expected": "down-right",
       "observed": "down-right",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 6.9px right and 12.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts +1.5 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate +2.48px horizontally and +4.99px vertically inside the head; head follows by 0.85x and tilts +1.53 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support down-right, consistent with independent blind axis judgments."
     },
     {
       "label": "180",
       "expected": "down",
       "observed": "down",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 0.0px horizontally (centered) and 13.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts +0.0 deg and shifts with them; body, legs and feet stay on the idle baseline. Irises sit fully below the bangs with the mouth near the chin line."
+      "evidence": "Eyes, lashes and :3 mouth translate +0.00px horizontally and +5.40px vertically inside the head; head follows by 0.85x and tilts +0.00 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support down, consistent with independent blind axis judgments."
     },
     {
       "label": "202.5",
       "expected": "down-left",
       "observed": "down-left",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 6.9px left and 12.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts -1.5 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate -2.48px horizontally and +4.99px vertically inside the head; head follows by 0.85x and tilts -1.53 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support down-left, consistent with independent blind axis judgments."
     },
     {
       "label": "225",
       "expected": "down-left",
       "observed": "down-left",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 12.8px left and 9.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts -2.8 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate -4.58px horizontally and +3.82px vertically inside the head; head follows by 0.85x and tilts -2.83 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support down-left, consistent with independent blind axis judgments."
     },
     {
       "label": "247.5",
       "expected": "down-left",
       "observed": "down-left",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 16.8px left and 5.2px down from idle 0 inside the face (blush follows at 0.6x); head tilts -3.7 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate -5.99px horizontally and +2.07px vertically inside the head; head follows by 0.85x and tilts -3.70 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support down-left, consistent with independent blind axis judgments."
     },
     {
       "label": "270",
       "expected": "left",
       "observed": "left",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 18.1px left and 0.0px vertically (level) from idle 0 inside the face (blush follows at 0.6x); head tilts -4.0 deg and shifts with them; body, legs and feet stay on the idle baseline. Left eye moves toward the left side hair, right eye moves toward the centre."
+      "evidence": "Eyes, lashes and :3 mouth translate -6.48px horizontally and +0.00px vertically inside the head; head follows by 0.85x and tilts -4.00 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support left, consistent with independent blind axis judgments."
     },
     {
       "label": "292.5",
       "expected": "up-left",
       "observed": "up-left",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 16.8px left and 4.1px up from idle 0 inside the face (blush follows at 0.6x); head tilts -3.7 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate -5.99px horizontally and -1.03px vertically inside the head; head follows by 0.85x and tilts -3.70 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support up-left, consistent with independent blind axis judgments."
     },
     {
       "label": "315",
       "expected": "up-left",
       "observed": "up-left",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 12.8px left and 7.5px up from idle 0 inside the face (blush follows at 0.6x); head tilts -2.8 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate -4.58px horizontally and -1.91px vertically inside the head; head follows by 0.85x and tilts -2.83 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support up-left, consistent with independent blind axis judgments."
     },
     {
       "label": "337.5",
       "expected": "up-left",
       "observed": "up-left",
       "verdict": "pass",
-      "evidence": "Eyes, lashes and mouth shift 6.9px left and 9.8px up from idle 0 inside the face (blush follows at 0.6x); head tilts -1.5 deg and shifts with them; body, legs and feet stay on the idle baseline."
+      "evidence": "Eyes, lashes and :3 mouth translate -2.48px horizontally and -2.49px vertically inside the head; head follows by 0.85x and tilts -1.53 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support up-left, consistent with independent blind axis judgments."
     }
-  ]
+  ],
+  "atlas_sha256": "6aac93e13601d68b6b9ff5206fbc36703f608d582bde8e6060f0650655368cda",
+  "face_layer_review": "Lashes render behind the lower fringe; missing original black fringe contours are completed behind the eyes. Jaw follows a smooth lower skin boundary and draws only outside its opaque fill."
 }

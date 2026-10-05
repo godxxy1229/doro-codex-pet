@@ -44,7 +44,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\idle\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16285,
+          "nontransparent_pixels": 16299,
           "bbox": [
             14,
             58,
@@ -59,7 +59,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\idle\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15924,
+          "nontransparent_pixels": 15931,
           "bbox": [
             14,
             61,
@@ -89,7 +89,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\idle\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15924,
+          "nontransparent_pixels": 15931,
           "bbox": [
             14,
             61,
@@ -104,7 +104,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\idle\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16285,
+          "nontransparent_pixels": 16299,
           "bbox": [
             14,
             58,
@@ -392,7 +392,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\waving\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16351,
+          "nontransparent_pixels": 16363,
           "bbox": [
             19,
             55,
@@ -437,7 +437,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\waving\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16405,
+          "nontransparent_pixels": 16406,
           "bbox": [
             20,
             54,
@@ -680,7 +680,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\waiting\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16104,
+          "nontransparent_pixels": 16117,
           "bbox": [
             18,
             58,
@@ -710,7 +710,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\waiting\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16069,
+          "nontransparent_pixels": 16077,
           "bbox": [
             20,
             57,
@@ -740,7 +740,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\waiting\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16100,
+          "nontransparent_pixels": 16107,
           "bbox": [
             19,
             57,
@@ -755,7 +755,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\waiting\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16065,
+          "nontransparent_pixels": 16077,
           "bbox": [
             19,
             58,
@@ -781,7 +781,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\running\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16424,
+          "nontransparent_pixels": 16427,
           "bbox": [
             11,
             65,
@@ -796,7 +796,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\running\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16728,
+          "nontransparent_pixels": 16731,
           "bbox": [
             10,
             64,
@@ -811,7 +811,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\running\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16427,
+          "nontransparent_pixels": 16418,
           "bbox": [
             11,
             65,
@@ -826,7 +826,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\running\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16824,
+          "nontransparent_pixels": 16738,
           "bbox": [
             10,
             64,
@@ -841,7 +841,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\running\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16420,
+          "nontransparent_pixels": 16424,
           "bbox": [
             11,
             65,
@@ -856,7 +856,7 @@
           "file": "C:\\Project\\codex-pets\\doro-svg\\frames\\running\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16752,
+          "nontransparent_pixels": 16735,
           "bbox": [
             10,
             64,

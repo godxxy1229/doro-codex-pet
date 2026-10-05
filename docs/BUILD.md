@@ -35,8 +35,32 @@ Stored QA reports identify the atlas hashes they reviewed. The published
 community atlas also has a separate package report and blind direction review.
 The reports' documented gaps between legs are intentional transparent space.
 
-The pre-existing local pet `~/.codex/pets/doro/` is preserved; public installation
-uses `~/.codex/pets/doro-svg/`.
+The local pet `~/.codex/pets/doro/` receives the canonical artwork while retaining
+its existing manifest and selection. Public installation uses
+`~/.codex/pets/doro-svg/` and the English public manifest.
+
+## Face and typing revision (2026-10-06)
+
+Waiting and Look keep both eyes readable by reducing eye displacement and
+shortening only the lower fringe. The crown stays fixed. Blush remains attached
+to the face. Behind the moving eyes, subtle blush and matching black strokes
+complete the gaps in the original fringe contour; no decorative strands are added.
+The lashes draw behind the fringe in these states so they do not leave black
+eyebrow-like marks on top of the pink hair.
+The jaw contour follows the head rather than the rotating side lock, keeping
+the cheek/chin connection closed during Waiting's paw taps.
+Its lower skin boundary is a smooth curve between the side locks. The outline
+is generated only outside that skin boundary, preventing interior cheek lines
+and steps at the underlay joins.
+The same contour repair also applies to Idle, Waving, and Jumping, as requested.
+Typing alternates paws across the upper, middle, and lower keyboard rows;
+the active key and paw contact share the same coordinates.
+
+Only rows 0, 3, 4, 6, 7, 9, and 10 changed. `qa/face-typing-audit.json` checks unchanged
+pixels, iris visibility, paw contact, and frame timings. Three independent blind
+reviews of all 16 directions passed; their reports are `qa/blind-face-*.json`.
+Before/after loops are in `previews/comparison/`.
+`qa/contour-audit.json` checks both jaw-to-hair connections in all 43 repaired poses.
 
 Detailed rig notes: [BUILD.ko.md](BUILD.ko.md).
 Original vector notes: [ORIGINAL.ko.md](ORIGINAL.ko.md).

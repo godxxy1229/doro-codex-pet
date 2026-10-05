@@ -1,22 +1,8 @@
 {
-  "ok": true,
-  "repository": "https://github.com/godxxy1229/doro-codex-pet",
+  "ok": false,
+  "status": "pending_temporary_api_key_confirmation",
   "page": "https://codex-pets.net/#/pets/doro-svg",
-  "owner_handle": "godxxy",
   "id": "doro-svg",
-  "description": "An unofficial Doro companion for Codex. https://github.com/godxxy1229/doro-codex-pet",
-  "kind": "creature",
-  "tags": [
-    "animated",
-    "anime",
-    "cute",
-    "mascot"
-  ],
-  "download_url": "https://codex-pets.net/api/pets/doro-svg/download?v=1791220229344",
-  "zip_integrity": true,
-  "manifest_equal": true,
-  "webp_bytes_equal": true,
-  "animation_pixels_equal": true,
-  "webp_sha256": "7964f3f784cbd3c15d872dc5d43892dc31cfec409edf928d5026d3443e5a94cf",
+  "prepared_webp_sha256": "470a5cd0d119990c668a100662ec8d1b2095e0866ba63cc80fc61c4424f498c2",
   "temporary_api_key_created": false
 }
