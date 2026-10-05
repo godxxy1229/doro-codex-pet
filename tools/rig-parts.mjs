@@ -17,6 +17,7 @@ export const DEFS = '<clipPath id="hc"><path d="M44 0H205V215H44z"/></clipPath>'
   + '<clipPath id="fringe-lower"><path d="M0 179.5H400V400H0Z"/></clipPath>'
   + '<clipPath id="jaw-lower"><path d="M0 242H400V280H0Z"/></clipPath>'
   + '<clipPath id="jaw-skin-clip"><path id="jaw-skin-boundary" d="M0 0H400V400H0Z"/></clipPath>'
+  + '<mask id="jaw-curve-mask" maskUnits="userSpaceOnUse" x="20" y="220" width="210" height="90"><path id="jaw-curve-band" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="butt" d="M162 272C150 275 144 275 124 275C106 275 94 274 80 267"/></mask>'
   + `<filter id="jaw-outline-filter" filterUnits="userSpaceOnUse" x="20" y="160" width="210" height="130"><feMorphology in="SourceAlpha" operator="dilate" radius="2.5" result="expanded"/><feComposite in="expanded" in2="SourceAlpha" operator="out" result="border"/><feFlood flood-color="${INK}" result="ink"/><feComposite in="ink" in2="border" operator="in"/></filter>`
   + '<radialGradient id="face-tint"><stop stop-color="#f2b4c3" stop-opacity=".28"/><stop offset="1" stop-color="#f2b4c3" stop-opacity="0"/></radialGradient>'
   // lens: 돋보기 렌즈 안쪽(렌즈 중심 = 왼쪽 눈 중심 94,217, 테 안쪽 반지름 38.5)
@@ -27,12 +28,12 @@ export const PARTS = [
     anchor: 'face', where: 'before',
     // Dilate the union of all face fills and subtract its interior before colouring the border.
     // This also closes the clipped underlay edges without drawing a line inside the cheek.
-    svg: `<g id="jaw-contour" display="none" clip-path="url(#jaw-lower)"><g filter="url(#jaw-outline-filter)"><g clip-path="url(#jaw-skin-clip)">
+    svg: `<g id="jaw-contour" display="none" clip-path="url(#jaw-lower)"><g mask="url(#jaw-curve-mask)"><g filter="url(#jaw-outline-filter)"><g clip-path="url(#jaw-skin-clip)">
       <use href="#face-skin"/>
       <use href="#jaw-skin-fill"/>
       <g id="jaw-left-extension" display="none" clip-path="url(#fcl)"><use href="#face-skin" x="-14"/></g>
       <g id="jaw-right-extension" display="none" clip-path="url(#fcr)"><use href="#face-skin" x="14"/></g>
-    </g></g></g>`,
+    </g></g></g></g>`,
   },
   {
     anchor: 'face', where: 'prepend',

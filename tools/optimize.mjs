@@ -21,6 +21,13 @@ const OUT = path.join(root, 'src/doro-rig.svg');
 
 let s = fs.readFileSync(SOURCE, 'utf8');
 
+// The source fringe embeds a short horizontal upper-eye stroke in its hair
+// strand layer. Remove this remnant; the actual eye rim stays in the lashes
+// layer and follows the gaze instead of leaving a mark on the pink fringe.
+const fringeBrowRemnant = /\s*<path d="M295\.3,413\.6[^"]+"\/>/;
+if (!fringeBrowRemnant.test(s)) throw new Error('Original fringe brow remnant not found.');
+s = s.replace(fringeBrowRemnant, '');
+
 // --- 1. 전처리 -------------------------------------------------------------
 s = s.replace(/<title>[^<]*<\/title>/, '').replace(/ data-pivot="[^"]*"/g, '');
 // 왼쪽 앞다리 주름은 다리를 크게 들 때(waving) 숨길 수 있게 따로 id를 단다.

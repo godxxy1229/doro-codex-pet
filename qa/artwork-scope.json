@@ -1,0 +1,448 @@
+{
+  "ok": true,
+  "atlas_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
+  "method": "Compare each final RGBA cell with the backed-up renderer and atlas; affected scope is only pixels painted by the previous chin border or embedded fringe upper-eye remnant, including mirrored cells and the review lens.",
+  "changed_pixels": 5912,
+  "outside_target_pixels": 0,
+  "all_other_body_face_eye_hair_pixels_preserved": true,
+  "cells": [
+    {
+      "state": "idle",
+      "frame": 1,
+      "changed_pixels": 100,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 2,
+      "changed_pixels": 146,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 3,
+      "changed_pixels": 142,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 4,
+      "changed_pixels": 136,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 5,
+      "changed_pixels": 142,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "idle",
+      "frame": 6,
+      "changed_pixels": 146,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 1,
+      "changed_pixels": 11,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 2,
+      "changed_pixels": 6,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 3,
+      "changed_pixels": 6,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 4,
+      "changed_pixels": 8,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 5,
+      "changed_pixels": 11,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 6,
+      "changed_pixels": 6,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 7,
+      "changed_pixels": 7,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 8,
+      "changed_pixels": 9,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 1,
+      "changed_pixels": 11,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 2,
+      "changed_pixels": 6,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 3,
+      "changed_pixels": 6,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 4,
+      "changed_pixels": 8,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 5,
+      "changed_pixels": 11,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 6,
+      "changed_pixels": 6,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 7,
+      "changed_pixels": 7,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 8,
+      "changed_pixels": 9,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waving",
+      "frame": 1,
+      "changed_pixels": 153,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waving",
+      "frame": 2,
+      "changed_pixels": 130,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waving",
+      "frame": 3,
+      "changed_pixels": 128,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waving",
+      "frame": 4,
+      "changed_pixels": 149,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "jumping",
+      "frame": 1,
+      "changed_pixels": 114,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "jumping",
+      "frame": 2,
+      "changed_pixels": 95,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "jumping",
+      "frame": 3,
+      "changed_pixels": 118,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "jumping",
+      "frame": 4,
+      "changed_pixels": 124,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "jumping",
+      "frame": 5,
+      "changed_pixels": 92,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 1,
+      "changed_pixels": 12,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 2,
+      "changed_pixels": 12,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 3,
+      "changed_pixels": 12,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 4,
+      "changed_pixels": 8,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 5,
+      "changed_pixels": 12,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 6,
+      "changed_pixels": 11,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 7,
+      "changed_pixels": 11,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 8,
+      "changed_pixels": 8,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waiting",
+      "frame": 1,
+      "changed_pixels": 152,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waiting",
+      "frame": 2,
+      "changed_pixels": 134,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waiting",
+      "frame": 3,
+      "changed_pixels": 151,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waiting",
+      "frame": 4,
+      "changed_pixels": 132,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waiting",
+      "frame": 5,
+      "changed_pixels": 158,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "waiting",
+      "frame": 6,
+      "changed_pixels": 160,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running",
+      "frame": 1,
+      "changed_pixels": 105,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running",
+      "frame": 2,
+      "changed_pixels": 145,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running",
+      "frame": 3,
+      "changed_pixels": 105,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running",
+      "frame": 4,
+      "changed_pixels": 145,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running",
+      "frame": 5,
+      "changed_pixels": 105,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "running",
+      "frame": 6,
+      "changed_pixels": 145,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "review",
+      "frame": 1,
+      "changed_pixels": 3,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "review",
+      "frame": 2,
+      "changed_pixels": 5,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "review",
+      "frame": 3,
+      "changed_pixels": 12,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "review",
+      "frame": 4,
+      "changed_pixels": 10,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "review",
+      "frame": 5,
+      "changed_pixels": 8,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "review",
+      "frame": 6,
+      "changed_pixels": 7,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 1,
+      "changed_pixels": 116,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 2,
+      "changed_pixels": 155,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 3,
+      "changed_pixels": 130,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 4,
+      "changed_pixels": 126,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 5,
+      "changed_pixels": 117,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 6,
+      "changed_pixels": 119,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 7,
+      "changed_pixels": 139,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 8,
+      "changed_pixels": 145,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 9,
+      "changed_pixels": 123,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 10,
+      "changed_pixels": 139,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 11,
+      "changed_pixels": 139,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 12,
+      "changed_pixels": 131,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 13,
+      "changed_pixels": 118,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 14,
+      "changed_pixels": 119,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 15,
+      "changed_pixels": 135,
+      "outside_target_pixels": 0
+    },
+    {
+      "state": "look",
+      "frame": 16,
+      "changed_pixels": 150,
+      "outside_target_pixels": 0
+    }
+  ]
+}

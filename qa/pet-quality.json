@@ -1,8 +1,8 @@
 {
   "ok": true,
   "atlas": "C:\\Project\\codex-pets\\doro-svg\\final\\spritesheet.webp",
-  "encoded_bytes": 702106,
-  "sha256": "6aac93e13601d68b6b9ff5206fbc36703f608d582bde8e6060f0650655368cda",
+  "encoded_bytes": 701202,
+  "sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
   "jump": {
     "idle_baseline": 198,
     "jump_baselines": [

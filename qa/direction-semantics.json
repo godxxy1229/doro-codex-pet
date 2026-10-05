@@ -1,5 +1,5 @@
 {
-  "review_basis": "Final encoded atlas and labeled native-size sheet visually reviewed. Three independent blind reviewers classified all horizontal and vertical pairs; combined verdicts passed without warnings. Eyes/lashes/mouth move in the head; stationary blush and fine hair lines fill the exposed skin behind the eyes. The crown stays fixed while the lower fringe shortens slightly, side locks open outward, and the head follows the gaze.",
+  "review_basis": "Final encoded atlas reviewed at native and enlarged sizes. Facial direction landmarks are unchanged; the chin border is confined to its curve and the original embedded fringe upper-eye remnant is removed. Fresh independent blind verdicts are recorded in qa/blind-jaw-*.json.",
   "alpha_review": "Transparent rows reported near y=176-184 are the open spaces between the separate legs below the body, continuous with the outside background. The face, hair and body surfaces have no accidental holes: when a side-hair lock swings outward, the cheek it uncovers is filled with a face-skin copy shifted outward (so the cheek continues in skin colour) and the crown/temple seam with a static hair copy; both underlays are switched off when the lock swings inward so no colour shows outside the outline.",
   "directions": [
     {
@@ -115,6 +115,6 @@
       "evidence": "Eyes, lashes and :3 mouth translate -2.48px horizontally and -2.49px vertically inside the head; head follows by 0.85x and tilts -1.53 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support up-left, consistent with independent blind axis judgments."
     }
   ],
-  "atlas_sha256": "6aac93e13601d68b6b9ff5206fbc36703f608d582bde8e6060f0650655368cda",
+  "atlas_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
   "face_layer_review": "Lashes render behind the lower fringe; missing original black fringe contours are completed behind the eyes. Jaw follows a smooth lower skin boundary and draws only outside its opaque fill."
 }

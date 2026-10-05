@@ -62,16 +62,33 @@ for (const [state, count] of [['idle', 6], ['waving', 4], ['jumping', 5], ['wait
     const isolated = structuredClone(solo);
     isolated.hide.push('face', 'face-details', 'bangs', 'hair-side-left', 'hair-side-right', 'hair-back', 'ribbon-tails', 'rose', 'bow');
     const svg = frameSvg(isolated);
-    const [border, skin] = await Promise.all([svg, svg.replace('filter="url(#jaw-outline-filter)"', '')]
+    const [border, skin] = await Promise.all([svg, svg.replace('filter="url(#jaw-outline-filter)"', '').replace('mask="url(#jaw-curve-mask)"', '')]
       .map((s) => sharp(Buffer.from(s), { density: 288 }).ensureAlpha().raw().toBuffer()));
-    let interior = 0;
-    for (let j = 3; j < border.length; j += 4) if (border[j] > 32 && skin[j] > 250) interior++;
+    let interior = 0, beyondLeft = 0, beyondRight = 0;
+    const left = part([80, 267], 'hair-side-left', pose);
+    const right = part([162, 272], 'hair-side-right', pose);
+    // The mask ends at the hair's inner contour. Unlike a round cap, its flat
+    // ends cannot extend the chin curve past either lock into the hair tip.
+    const outsideEnd = (point, anchor, direction) =>
+      ((point[0] - anchor[0]) * direction[0] + (point[1] - anchor[1]) * direction[1]) / Math.hypot(...direction) > 0.8;
+    for (let j = 3; j < border.length; j += 4) {
+      if (border[j] > 32 && skin[j] > 250) interior++;
+      if (border[j] <= 200) continue;
+      const k = (j - 3) / 4;
+      const xy = [(k % info.width / 4 - CELL.ox) / CELL.scale,
+        (Math.floor(k / info.width) / 4 - CELL.oy) / CELL.scale];
+      const local = inverse(inverse(xy, 'doro', pose), 'head', pose);
+      if (local[0] < left[0] + 12 && outsideEnd(local, left, [-14, -7])) beyondLeft++;
+      if (local[0] > right[0] - 12 && outsideEnd(local, right, [12, -3])) beyondRight++;
+    }
     if (interior) throw new Error(`${state} ${i + 1}: ${interior} border pixels inside solid cheek.`);
-    checks.push({ state, frame: i + 1, left_connected: true, right_connected: true, border_pixels_inside_solid_face: interior });
+    if (beyondLeft || beyondRight) throw new Error(`${state} ${i + 1}: chin extends beyond a hair anchor (${beyondLeft}/${beyondRight}).`);
+    checks.push({ state, frame: i + 1, left_connected: true, right_connected: true, border_pixels_inside_solid_face: interior,
+      chin_pixels_past_left_hair_anchor: beyondLeft, chin_pixels_past_right_hair_anchor: beyondRight });
   }
 }
 fs.writeFileSync('qa/contour-audit.json', JSON.stringify({ ok: true,
   atlas_sha256: crypto.createHash('sha256').update(fs.readFileSync('final/spritesheet.webp')).digest('hex'),
-  method: '4x SVG render; jaw/cheek anchors share an 8-connected ink component restricted to the lower face; jaw filter has zero ink inside the opaque face union',
+  method: '4x SVG render; lower-face ink connects both moving locks; exterior-only skin border is limited to the chin arc with flat ends; zero ink inside opaque cheeks or beyond either hair anchor (0.8 grid raster tolerance)',
   checks }, null, 2) + '\n');
 console.log(`Jaw contours connected in ${checks.length} poses.`);

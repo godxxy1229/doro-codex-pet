@@ -1,0 +1,90 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's mouth and eyes sit farther toward the right side of the fringe and facial outline; B's landmarks sit farther left. The shift is modest but visible."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's eye-and-mouth cluster is displaced left within the hair opening, while B's cluster is displaced right; the cheek space changes with it."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's mouth is nearer the left half of the exposed face and the eyes follow that offset; B's landmarks occupy the right half more strongly."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's eyes and mouth are shifted right beneath the fringe, with a sloping face presentation; B's landmark cluster is shifted left."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A shows a left-shifted mouth and eye cluster relative to the bangs; B's same landmarks sit distinctly farther right."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's eyes and mouth favor the screen-left portion of the facial opening; B's favor screen-right, with corresponding cheek asymmetry."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's mouth and eyes sit left of the corresponding fringe landmarks, whereas B's cluster sits farther right. The difference is smaller than in some other pairs but still readable."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes and mouth sit lower beneath the bangs and closer to the chin; B's eyes and mouth sit higher in the facial opening."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A presents lower eyes and a lower mouth beneath the fringe; B presents higher landmarks and more exposed white cheek below them."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "A's mouth and eye cluster appear lower relative to the bangs than B's. This is a subtle comparison, so confidence is moderate."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eye-and-mouth cluster appears slightly higher in the facial opening; B's sits lower and the chin is slightly lower. The small difference makes this one less certain."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes and mouth are visibly lower under the fringe, while B's landmarks are higher with more cheek/chin area below the mouth."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eye and mouth landmarks sit somewhat lower below the bangs than B's. The tilt is modest, giving moderate confidence."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eyes and mouth are slightly higher within the hair opening; B's cluster sits lower toward the chin. The vertical separation is small, so confidence is moderate."
+    }
+  ],
+  "notes": "Blind review of the supplied four labeled chunks and join montage only. Horizontal directions are generally clearer than the small vertical differences, especially vertical-3, vertical-4, vertical-6, and vertical-7. Dark diagonal strokes are visible immediately below/beyond the screen-left hair tips in joins 22, 24, 26, and 36, with similar lower strokes in neighboring joins 23, 25, 27, 37, and 38. From these crops I cannot confidently distinguish a chin extension from the body contour; the strokes are visible protrusions below the hair, but I do not see a clear long chin line traversing the pink hair interior. The chin outlines otherwise look continuous: I did not identify a definite open chin gap in the join montage. I did not identify a separate stray line across the white cheek interior beyond the intended eyes, mouth, and face border. Several short dark, nearly horizontal strokes lie on the pink fringe above the eyes and read like eyebrows, particularly horizontal-2 A, horizontal-5 A, horizontal-6 A, vertical-1 A, vertical-5 A, vertical-6 A, and vertical-7 B; similar marks are present more subtly in other panels. Their appearance as eyebrow-like marks is clearer than whether they are intended eye outlines. Join labels do not establish which labeled pair image they represent, so I have not assigned join defects to pair images by inference."
+}
+

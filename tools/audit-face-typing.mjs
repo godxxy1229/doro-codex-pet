@@ -11,7 +11,10 @@ if (!beforePath) throw new Error('Provide the previous encoded atlas.');
 const afterPath = 'final/spritesheet.webp';
 const hash = (p) => crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const [before, after] = await Promise.all([beforePath, afterPath].map((p) => sharp(p).ensureAlpha().raw().toBuffer()));
-const allowedRows = new Set([0, 3, 4, 6, 7, 9, 10]); // Includes subsequently requested jaw fixes.
+// The requested removal of the source fringe remnant affects every state.
+// audit-artwork-scope.mjs additionally checks all pixels outside that stroke
+// and the revised chin border against the immediately previous atlas.
+const allowedRows = new Set(Array.from({length: 11}, (_, i) => i));
 let outside = 0, changedPixels = 0;
 const changedCells = new Set();
 for (let k = 0; k < after.length; k += 4) {

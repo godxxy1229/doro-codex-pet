@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "id": "doro-svg",
+  "page": "https://codex-pets.net/#/pets/doro-svg",
+  "download_url": "/api/pets/doro-svg/download?v=1791225692680",
+  "spritesheet_url": "https://codex-pets.net/assets/pets/v/1791225692680/doro-svg/spritesheet.webp",
+  "public_webp_sha256": "470a5cd0d119990c668a100662ec8d1b2095e0866ba63cc80fc61c4424f498c2",
+  "canonical_webp_sha256": "6aac93e13601d68b6b9ff5206fbc36703f608d582bde8e6060f0650655368cda",
+  "remote_sheet_bytes_equal": true,
+  "public_zip_integrity_passed": true,
+  "public_zip_sheet_bytes_equal": true,
+  "public_manifest_equal": true,
+  "english_install_description_preserved": true,
+  "name_description_tags_owner_preserved": true,
+  "github_asset_bytes_equal": true,
+  "native_canonical_bytes_equal": true,
+  "all_73_animation_cells_rgba_equal_across_native_and_public": true,
+  "community_assets": {
+    "previewUrl": {
+      "bytes_equal": true,
+      "sha256": "d8b045a7cc3fa7f204e24423553da9745804c8cb7625daa92df7e8b9e6a2b015"
+    },
+    "posterUrl": {
+      "bytes_equal": true,
+      "sha256": "ddb9bb9de7e1cc8c243101dc073cacc484fbc0c2f4fc8f478884a44bb140eb79"
+    },
+    "shareImageUrl": {
+      "bytes_equal": true,
+      "sha256": "f9e6e076eb2167c318e0d1f27e6d63f95063f7c3f85b183eb80828ee91fb5ab2"
+    }
+  },
+  "temporary_api_key": {
+    "name": "Doro face and typing update",
+    "created_with_user_confirmation": true,
+    "revoked_immediately_after_upload": true,
+    "revocation_verified_in_settings": true,
+    "persisted_to_file_or_log": false
+  }
+}

@@ -47,18 +47,25 @@ to the face. Behind the moving eyes, subtle blush and matching black strokes
 complete the gaps in the original fringe contour; no decorative strands are added.
 The lashes draw behind the fringe in these states so they do not leave black
 eyebrow-like marks on top of the pink hair.
+The original fringe also contained a detached horizontal upper-eye stroke.
+`optimize.mjs` removes that one source remnant in every state while keeping the
+moving eye rims and the fringe's actual strand contours.
 The jaw contour follows the head rather than the rotating side lock, keeping
 the cheek/chin connection closed during Waiting's paw taps.
 Its lower skin boundary is a smooth curve between the side locks. The outline
 is generated only outside that skin boundary, preventing interior cheek lines
 and steps at the underlay joins.
+An arc mask with flat ends limits the border to the chin itself; the side edges
+of the skin union cannot extend past either moving hair-lock anchor.
 The same contour repair also applies to Idle, Waving, and Jumping, as requested.
 Typing alternates paws across the upper, middle, and lower keyboard rows;
 the active key and paw contact share the same coordinates.
 
-Only rows 0, 3, 4, 6, 7, 9, and 10 changed. `qa/face-typing-audit.json` checks unchanged
-pixels, iris visibility, paw contact, and frame timings. Three independent blind
-reviews of all 16 directions passed; their reports are `qa/blind-face-*.json`.
+The later fringe-remnant repair affects every state. `qa/artwork-scope.json`
+checks all RGBA pixels against the previous atlas and renderer: only the old
+chin border and the removed fringe stroke may change, including the review lens.
+`qa/face-typing-audit.json` checks iris visibility, paw contact, and frame timings.
+Three independent blind reviews of all 16 directions are in `qa/blind-jaw-*.json`.
 Before/after loops are in `previews/comparison/`.
 `qa/contour-audit.json` checks both jaw-to-hair connections in all 43 repaired poses.
 

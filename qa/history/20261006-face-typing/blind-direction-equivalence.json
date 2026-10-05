@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "canonical_sha256": "6aac93e13601d68b6b9ff5206fbc36703f608d582bde8e6060f0650655368cda",
+  "public_sha256": "470a5cd0d119990c668a100662ec8d1b2095e0866ba63cc80fc61c4424f498c2",
+  "direction_rows_identical": true,
+  "blind_reviewers": 3,
+  "pairs_passed": 14,
+  "report": "blind-face-validation.json"
+}

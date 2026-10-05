@@ -59,6 +59,10 @@ export function frameSvg(pose) {
     const left = lockPoint('hair-side-left', 80, 267), right = lockPoint('hair-side-right', 162, 272);
     // Smooth lower skin boundary; the side endpoints meet their hair locks.
     const bottom = `L${right}C${f2(right[0] - 12)},${f2(right[1] + 3)} 144,275 124,275C106,275 ${f2(left[0] + 14)},${f2(left[1] + 7)} ${left}`;
+    // Keep only the actual chin arc. The union's vertical side edges must not
+    // extend under or beyond the moving left hair tip.
+    s = s.replace(/(<path\b[^>]*id="jaw-curve-band"[^>]* d=")[^"]*/,
+      `$1M${bottom.slice(1)}`);
     s = s.replace(/(<path\b[^>]*id="jaw-skin-boundary"[^>]* d=")[^"]*/,
       `$1M0,0H400V242${bottom}L0,242Z`);
     s = s.replace(/(<path\b[^>]*id="jaw-skin-fill"[^>]* d=")[^"]*/,

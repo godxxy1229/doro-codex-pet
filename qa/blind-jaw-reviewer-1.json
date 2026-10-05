@@ -1,0 +1,89 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's eyes and mouth sit farther toward the screen-right side of the hair opening; B's facial landmarks shift screen-left. High confidence."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's mouth and eye group are close to the screen-left cheek; B's mouth and eye group sit nearer the screen-right hair lock. High confidence."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A has its facial center shifted screen-left within the pink hair, while B shifts the eyes and mouth screen-right. High confidence."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's mouth lies toward the screen-right side of the face opening and the right eye approaches the right lock; B's landmarks shift toward the screen-left cheek. High confidence."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's eyes and mouth occupy the screen-left part of the face opening; B's corresponding features shift screen-right and leave a broader visible screen-left cheek. High confidence."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's facial center is nearer the screen-left hair boundary; B's mouth and eyes are shifted toward the screen-right lock. High confidence."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The change is smaller than in earlier horizontal pairs, but A's mouth and eye group appear screen-left within the head opening and B's appear screen-right. Moderate confidence."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes and mouth sit lower beneath the fringe and its lower face is more bowed; B's eyes sit higher and its chin is flatter. High confidence."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes and mouth are lower in the hair opening; B raises those landmarks toward the fringe and has a flatter lower-face contour. High confidence."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eye group and mouth sit visibly lower relative to the fringe and cheek opening; B's landmarks are higher with a shallower chin curve. High confidence."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eyes and mouth appear slightly higher toward the fringe, whereas B's facial landmarks descend and the chin rounds more. The difference is subtle and some whole-head movement is also visible; moderate-to-low confidence."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A shows lower eyes and mouth and a deeper lower-face curve; B brings the landmarks upward beneath the fringe and flattens the chin. High confidence."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes and mouth are lower in the face opening and its chin is more bowed; B's landmarks sit higher under the fringe. High confidence."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eye and mouth group appear slightly higher and its chin is flatter; B lowers the landmarks and rounds the lower face. This is a relatively small pose difference; moderate confidence."
+    }
+  ],
+  "notes": "Reviewed only the four labeled image chunks and the supplied Join 1–43 sheet. I do not see a definite chin line crossing through the pink screen-left hair, extending beyond its outer edge, or an open break in the chin contour in these images. The left cheek-to-chin transitions have some darker/thicker short segments, most noticeable in joins 1, 2, 4, 7, 15, 21, 29, 35, and 43, but they appear to stay along the face boundary rather than become free interior cheek lines. I see no unambiguous extra detached cheek-interior stroke. Short nearly horizontal black marks immediately above the eyes can read as eyebrow-like against the pink fringe, especially in horizontal-2 A, horizontal-5 A, and vertical-5 A; they are adjacent to the upper eye/eyelash outlines, so I am uncertain whether they are unintended marks or intentional eye detailing. The join sheet crops out most of the fringe, which limits checking that particular issue there. Horizontal-7 and vertical-4/vertical-7 are the least decisive direction judgments; the remaining pairs have clearer landmark displacement."
+}

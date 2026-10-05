@@ -1,308 +1,394 @@
 {
   "ok": true,
-  "atlas_sha256": "6aac93e13601d68b6b9ff5206fbc36703f608d582bde8e6060f0650655368cda",
-  "method": "4x SVG render; jaw/cheek anchors share an 8-connected ink component restricted to the lower face; jaw filter has zero ink inside the opaque face union",
+  "atlas_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
+  "method": "4x SVG render; lower-face ink connects both moving locks; exterior-only skin border is limited to the chin arc with flat ends; zero ink inside opaque cheeks or beyond either hair anchor (0.8 grid raster tolerance)",
   "checks": [
     {
       "state": "idle",
       "frame": 1,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "idle",
       "frame": 2,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "idle",
       "frame": 3,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "idle",
       "frame": 4,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "idle",
       "frame": 5,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "idle",
       "frame": 6,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waving",
       "frame": 1,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waving",
       "frame": 2,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waving",
       "frame": 3,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waving",
       "frame": 4,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "jumping",
       "frame": 1,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "jumping",
       "frame": 2,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "jumping",
       "frame": 3,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "jumping",
       "frame": 4,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "jumping",
       "frame": 5,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waiting",
       "frame": 1,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waiting",
       "frame": 2,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waiting",
       "frame": 3,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waiting",
       "frame": 4,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waiting",
       "frame": 5,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "waiting",
       "frame": 6,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "running",
       "frame": 1,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "running",
       "frame": 2,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "running",
       "frame": 3,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "running",
       "frame": 4,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "running",
       "frame": 5,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "running",
       "frame": 6,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 1,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 2,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 3,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 4,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 5,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 6,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 7,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 8,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 9,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 10,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 11,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 12,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 13,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 14,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 15,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     },
     {
       "state": "look",
       "frame": 16,
       "left_connected": true,
       "right_connected": true,
-      "border_pixels_inside_solid_face": 0
+      "border_pixels_inside_solid_face": 0,
+      "chin_pixels_past_left_hair_anchor": 0,
+      "chin_pixels_past_right_hair_anchor": 0
     }
   ]
 }

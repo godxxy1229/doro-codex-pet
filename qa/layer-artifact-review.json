@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "atlas_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
+  "removed_original_fringe_remnant": "M295.3,413.6... in the original bangs-strands layer (M148 207... in the optimized rig)",
+  "fringe_remnant_absent_from_generated_rig": true,
+  "independent_visual_review_notes": "Reviewers flagged ambiguous short upper-eye strokes. Enlarged per-layer renders with lashes, backing contours, or both eyes and lashes hidden identify the remaining short arcs as the moving eye rims on exposed skin. The user-marked detached horizontal stroke in the pink fringe is removed; actual eye rims and strand outlines are retained.",
+  "jaw_review_notes": "Ambiguous dark strokes beneath the left lock in typing crops are the pre-existing body/paw outlines. The isolated chin border passes all 43 endpoint/cheek/connection checks; only chin border and removed fringe stroke pixels changed.",
+  "reviewer_reports": [
+    "blind-jaw-reviewer-1.json",
+    "blind-jaw-reviewer-2.json",
+    "blind-jaw-reviewer-3.json"
+  ]
+}
