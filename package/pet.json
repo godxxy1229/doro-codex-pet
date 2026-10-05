@@ -1,0 +1,7 @@
+{
+  "id": "doro-svg",
+  "displayName": "Doro",
+  "description": "An unofficial Doro companion for Codex. https://github.com/godxxy1229/doro-codex-pet",
+  "spritesheetPath": "spritesheet.webp",
+  "spriteVersionNumber": 2
+}
