@@ -26,7 +26,7 @@ fs.writeFileSync(path.join(output, 'spritesheet.webp'), sheet);
 fs.writeFileSync(path.join(output, 'pet.json'), JSON.stringify({
   id: 'doro-svg', displayName: 'Doro',
   description: 'An unofficial Doro companion for Codex. https://github.com/godxxy1229/doro-codex-pet',
-  spritesheetPath: 'spritesheet.webp', spriteVersionNumber: 2,
+  spritesheetPath: 'spritesheet.webp', spriteVersionNumber: 2, kind: 'creature',
 }, null, 2) + '\n');
 const hash = (data) => crypto.createHash('sha256').update(data).digest('hex');
 const report = { ok: true, canonical_sha256: hash(fs.readFileSync(input)), public_sha256: hash(sheet),
