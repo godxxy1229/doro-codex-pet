@@ -1,5 +1,5 @@
 {
-  "review_basis": "Final encoded atlas reviewed at native and enlarged sizes. Facial direction landmarks are unchanged; the chin border is confined to its curve and the original embedded fringe upper-eye remnant is removed. Fresh independent blind verdicts are recorded in qa/blind-jaw-*.json.",
+  "review_basis": "Final encoded atlas at native and enlarged sizes. Original right-hair underside restored without moving face landmarks. Three independent final blind direction verdicts are recorded in qa/blind-hair-*.json; magnified iris and first typing paw are separately checked.",
   "alpha_review": "Transparent rows reported near y=176-184 are the open spaces between the separate legs below the body, continuous with the outside background. The face, hair and body surfaces have no accidental holes: when a side-hair lock swings outward, the cheek it uncovers is filled with a face-skin copy shifted outward (so the cheek continues in skin colour) and the crown/temple seam with a static hair copy; both underlays are switched off when the lock swings inward so no colour shows outside the outline.",
   "directions": [
     {
@@ -115,6 +115,6 @@
       "evidence": "Eyes, lashes and :3 mouth translate -2.48px horizontally and -2.49px vertically inside the head; head follows by 0.85x and tilts -1.53 degrees while body/feet stay fixed. Shortened lower fringe and outward side locks expose both irises; measured iris visibility is at least 89.64% across revised states. The relative eye-to-hair/mouth-to-cheek landmarks visibly support up-left, consistent with independent blind axis judgments."
     }
   ],
-  "atlas_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
+  "atlas_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
   "face_layer_review": "Lashes render behind the lower fringe; missing original black fringe contours are completed behind the eyes. Jaw follows a smooth lower skin boundary and draws only outside its opaque fill."
 }

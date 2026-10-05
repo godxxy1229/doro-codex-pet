@@ -6,17 +6,17 @@
     "share.png": {
       "width": 1200,
       "height": 630,
-      "sha256": "e699d4323cb66e295699723c1b9eb88fbd75d2043b86ee06fb770d13c886db71"
+      "sha256": "5d73c27e0699fc4ae96a099dfdf0ca4a8120c7eb4cc33d462aa03a52c780ebde"
     },
     "poster.webp": {
       "width": 192,
       "height": 208,
-      "sha256": "93034abce1bc05e48a15373d21386dfbbcdaf42ad580f8a68b082ede29660b7a"
+      "sha256": "b61191af9e0baffda25403bc7b470a045062884d67003bd7bccaba09f47f5e90"
     },
     "preview.webp": {
       "width": 7008,
       "height": 104,
-      "sha256": "7168d2a1acfb2f3b2f9572e35a5576274b204ea4c93958ee536f3ef72d8b301d"
+      "sha256": "7e727d6d2b95320d383cfc8cc25ca25153dc7ba5011073401d74765644657600"
     }
   }
 }

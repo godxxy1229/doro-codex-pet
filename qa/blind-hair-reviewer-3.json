@@ -1,0 +1,100 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's eyes and muzzle sit farther toward the right side lock within the hair opening; B's landmarks sit farther left."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's eyes and mouth cluster sits toward the left hair edge; B's cluster shifts right under the fringe."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's left eye is closer to the left cheek/hair edge, while B's eyes and mouth sit farther right toward the side lock."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's face landmarks sit right within the hair frame; B's eyes and muzzle sit farther left."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's face cluster occupies the left side of the hair opening, whereas B's eyes and muzzle are nearer the right lock."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's eyes and mouth sit toward the right lock; B's face cluster sits left beneath the fringe."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's eyes and mouth sit left relative to the fringe and side locks; B's face cluster is visibly farther right."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eyes tuck higher beneath the bangs and its mouth sits higher in the opening; B's eyes and muzzle are lower toward the cheek outline."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "up",
+      "B": "down",
+      "reason": "A's face cluster rises toward the fringe; B's eyes and mouth sit lower within the hair opening."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eyes sit closer under the fringe tips and the muzzle is raised; B's face landmarks sit lower beneath the bangs."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "down",
+      "B": "up",
+      "reason": "The difference is subtle, but A's eyes and muzzle sit slightly lower relative to the fringe and cheek edge; B's face cluster is slightly raised."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes and mouth sit lower in the opening; B's eyes tuck higher beneath the bangs."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "up",
+      "B": "down",
+      "reason": "A's face cluster is higher and closer beneath the fringe; B's eyes and muzzle are lower toward the cheek outline."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes have more clearance below the bangs and its mouth is lower; B's face landmarks sit higher under the fringe."
+    }
+  ],
+  "notes": [
+    "Final independent blind rereview of regenerated directions-1.png through directions-4.png. Every pair was judged afresh from the visible face landmarks relative to hair, without consulting source, an answer key, or other reviews.",
+    "All 14 final direction pairs were readable. Vertical pair 4 remains the subtlest judgment.",
+    "Previously directly inspected, unchanged enlarged joins 1 through 43: the cheek-to-side-lock contour appeared continuous. No definite open contour gap or separate pink patch intruding into the white cheek was visible; the small tapered pink wedge followed the side-lock boundary.",
+    "Previously directly inspected, unchanged review frames 00 through 05: the magnified iris appeared lavender/white within its dark boundary, with no visible pink patch inside or obvious contour break.",
+    "Final native running/00.png was directly reinspected. Both typing forepaws appear attached to the body and reach the keyboard. No detached paw, open fill gap, or plainly broken contour is visible at native size.",
+    "The final side of typing-first-frame-before-after-20261006.png shows a short, blunt/free endpoint on the upper contour of the screen-left typing forepaw just below the cheek. At the supplied enlargement it reads as an abrupt wrist/arm crease; this is a visible contour detail, but the white paw fill still connects to the torso, so I would not call it a disconnected paw.",
+    "Running frames 01 through 05 were previously directly inspected and are unchanged: no visibly detached or disconnected typing forepaw was found.",
+    "No definite structural visual defect was found in the final supplied set. The enlarged upper-paw contour endpoint is the only candid minor concern; native-size iris and paw assessment is limited to the supplied pixels."
+  ],
+  "reviewed_canonical_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
+  "reviewed_public_sha256": "d699880f41d165072bfc77bff6f24f4363c1fec3d02efab7337ce113c592d4ac"
+}

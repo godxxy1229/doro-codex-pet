@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "canonical_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
-  "public_sha256": "8c014ddad3bb2166321a5c5686f5b2ca4c73b007182b862b72a022dd1654c4a0",
+  "canonical_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
+  "public_sha256": "d699880f41d165072bfc77bff6f24f4363c1fec3d02efab7337ce113c592d4ac",
   "direction_rows_identical": true,
   "blind_reviewers": 3,
   "pairs_passed": 14,
-  "report": "blind-jaw-validation.json"
+  "report": "blind-hair-validation.json"
 }

@@ -1,0 +1,107 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A places the eyes and mouth nearer the right pink hair lock; B places their center farther left beneath the fringe."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A leaves more exposed cheek to the right of the landmark group; B carries both eyes and the mouth farther right beneath the hair."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A places the landmark group left of the hair opening center, while B places it to the right."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A has its right eye close to the right side lock; B shifts the eye and mouth group toward the left curtain."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The eyes and mouth favor the left side of the hair opening in A and the right side in B."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A favors the right cheek relative to the fringe, while B shifts the facial landmarks left."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The shift is smaller, but A holds the eye and mouth group farther left under the fringe and B farther right."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A raises the eyes and mouth near the fringe with more cheek below the mouth; B lowers the group toward the bottom face contour."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "up",
+      "B": "down",
+      "reason": "A holds the facial landmarks high relative to the fringe tips; B lowers them farther beneath the hair."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down",
+      "reason": "A has the higher eye and mouth placement relative to the hair; B places them lower with less space beneath the mouth."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "down",
+      "B": "up",
+      "reason": "A places the eye and mouth group slightly lower below the fringe, while B raises it. This difference is subtle but readable."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A lowers the facial landmarks toward the cheek bottom; B raises them nearer the fringe."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "up",
+      "B": "down",
+      "reason": "A has the eyes and mouth nearer the fringe and more white cheek below; B lowers their placement."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "down",
+      "reason": "A holds the landmark group high under the hair tips, while B lowers it toward the bottom face contour."
+    }
+  ],
+  "notes": {
+    "inspection_scope": "Final refreshed blind judgments used regenerated directions-1.png through directions-4.png. Reinspected native frames/running/00.png and qa/typing-first-frame-before-after-20261006.png using view_image only. No source, answer key, or other review was read.",
+    "directions": "All 14 final pairs were readable. Horizontal-7 and vertical-4 show the smallest apparent shifts, but both remain assignable from the facial landmarks relative to the hair.",
+    "unchanged_joins": "Earlier inspection of joins-1.png through joins-3.png found no visible open contour gap or pink hair intrusion into the white cheek in the 43 anonymous crops. The cheek line and inner edge of the side lock met throughout. These supplied join sheets are reported unchanged.",
+    "unchanged_review_frames": "Earlier inspection of review frames 00 through 05 found no pink patch inside the magnified lavender iris. These supplied review frames are reported unchanged.",
+    "final_running_00": "The native final typing frame has continuous white paw/body fill and the paw reaches the keyboard. I do not see a floating detached paw or an open fill gap. The leftward paw edge has no conspicuous new sharp elbow at native resolution.",
+    "final_paw_concern": "In the enlarged After panel, the upper forepaw outline begins with a blunt free end below the cheek and hair, separated from the cheek contour. That isolated black shoulder stroke can read as detached even though the white fill remains connected. This is a visible contour concern, rather than a confirmed disconnection of the paw silhouette.",
+    "defects": [
+      {
+        "image": "qa/typing-first-frame-before-after-20261006.png (After panel)",
+        "issue": "Blunt free end on the upper forepaw outline below the cheek can make the shoulder attachment read as detached.",
+        "severity": "minor visible contour concern",
+        "native_visibility": "Subtle at native frame size; clearer in the enlarged crop."
+      }
+    ],
+    "limitations": "Judgments address visible supplied pixels. Unchanged joins and review frames retain their earlier visual observations; no source-level or pixel-mask verification was performed."
+  },
+  "reviewed_canonical_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
+  "reviewed_public_sha256": "d699880f41d165072bfc77bff6f24f4363c1fec3d02efab7337ce113c592d4ac"
+}

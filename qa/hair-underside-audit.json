@@ -1,0 +1,454 @@
+{
+  "ok": true,
+  "before_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
+  "atlas_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
+  "method": "Remove the restored original cubic and the explicitly requested pose changes (hide the typing shoulder crease; rotate the first typing paw -20 degrees around its shoulder with the key contact preserved; shorten the review lower fringe to 0.9). Compare the resulting SVG and pose exactly with the backed-up renderer, then compare every rendered cell with both decoded RGBA atlases, including mirrored cells.",
+  "restored_path": "M187 266c-8 1-14 7-21 8",
+  "restored_cells": 43,
+  "preserved_cells": 24,
+  "review_fringe_cells": 6,
+  "changed_pixels": 3954,
+  "unrelated_svg_or_pose_changes": 0,
+  "movement_and_failed_rgba_preserved": true,
+  "other_poses_and_all_timings_preserved": true,
+  "cells": [
+    {
+      "state": "idle",
+      "frame": 1,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 36
+    },
+    {
+      "state": "idle",
+      "frame": 2,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 40
+    },
+    {
+      "state": "idle",
+      "frame": 3,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 37
+    },
+    {
+      "state": "idle",
+      "frame": 4,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 36
+    },
+    {
+      "state": "idle",
+      "frame": 5,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 37
+    },
+    {
+      "state": "idle",
+      "frame": 6,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 40
+    },
+    {
+      "state": "running-right",
+      "frame": 1,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 2,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 3,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 4,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 5,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 6,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 7,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-right",
+      "frame": 8,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 1,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 2,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 3,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 4,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 5,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 6,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 7,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "running-left",
+      "frame": 8,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "waving",
+      "frame": 1,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 37
+    },
+    {
+      "state": "waving",
+      "frame": 2,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 37
+    },
+    {
+      "state": "waving",
+      "frame": 3,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 35
+    },
+    {
+      "state": "waving",
+      "frame": 4,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 37
+    },
+    {
+      "state": "jumping",
+      "frame": 1,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 36
+    },
+    {
+      "state": "jumping",
+      "frame": 2,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 37
+    },
+    {
+      "state": "jumping",
+      "frame": 3,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 47
+    },
+    {
+      "state": "jumping",
+      "frame": 4,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 53
+    },
+    {
+      "state": "jumping",
+      "frame": 5,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 35
+    },
+    {
+      "state": "failed",
+      "frame": 1,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 2,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 3,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 4,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 5,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 6,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 7,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "failed",
+      "frame": 8,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 0
+    },
+    {
+      "state": "waiting",
+      "frame": 1,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 35
+    },
+    {
+      "state": "waiting",
+      "frame": 2,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 36
+    },
+    {
+      "state": "waiting",
+      "frame": 3,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 36
+    },
+    {
+      "state": "waiting",
+      "frame": 4,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 34
+    },
+    {
+      "state": "waiting",
+      "frame": 5,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 34
+    },
+    {
+      "state": "waiting",
+      "frame": 6,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 34
+    },
+    {
+      "state": "running",
+      "frame": 1,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 257
+    },
+    {
+      "state": "running",
+      "frame": 2,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 88
+    },
+    {
+      "state": "running",
+      "frame": 3,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 89
+    },
+    {
+      "state": "running",
+      "frame": 4,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 88
+    },
+    {
+      "state": "running",
+      "frame": 5,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 89
+    },
+    {
+      "state": "running",
+      "frame": 6,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 88
+    },
+    {
+      "state": "review",
+      "frame": 1,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 348
+    },
+    {
+      "state": "review",
+      "frame": 2,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 307
+    },
+    {
+      "state": "review",
+      "frame": 3,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 273
+    },
+    {
+      "state": "review",
+      "frame": 4,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 298
+    },
+    {
+      "state": "review",
+      "frame": 5,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 280
+    },
+    {
+      "state": "review",
+      "frame": 6,
+      "restored_original_hair_underside": false,
+      "changed_pixels": 287
+    },
+    {
+      "state": "look",
+      "frame": 1,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 34
+    },
+    {
+      "state": "look",
+      "frame": 2,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 35
+    },
+    {
+      "state": "look",
+      "frame": 3,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 38
+    },
+    {
+      "state": "look",
+      "frame": 4,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 44
+    },
+    {
+      "state": "look",
+      "frame": 5,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 43
+    },
+    {
+      "state": "look",
+      "frame": 6,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 35
+    },
+    {
+      "state": "look",
+      "frame": 7,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 43
+    },
+    {
+      "state": "look",
+      "frame": 8,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 43
+    },
+    {
+      "state": "look",
+      "frame": 9,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 36
+    },
+    {
+      "state": "look",
+      "frame": 10,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 41
+    },
+    {
+      "state": "look",
+      "frame": 11,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 43
+    },
+    {
+      "state": "look",
+      "frame": 12,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 50
+    },
+    {
+      "state": "look",
+      "frame": 13,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 49
+    },
+    {
+      "state": "look",
+      "frame": 14,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 47
+    },
+    {
+      "state": "look",
+      "frame": 15,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 54
+    },
+    {
+      "state": "look",
+      "frame": 16,
+      "restored_original_hair_underside": true,
+      "changed_pixels": 38
+    }
+  ]
+}

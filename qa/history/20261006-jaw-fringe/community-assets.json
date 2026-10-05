@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "frames": 73,
+  "all_artwork_from_current_atlas": true,
+  "assets": {
+    "share.png": {
+      "width": 1200,
+      "height": 630,
+      "sha256": "e699d4323cb66e295699723c1b9eb88fbd75d2043b86ee06fb770d13c886db71"
+    },
+    "poster.webp": {
+      "width": 192,
+      "height": 208,
+      "sha256": "93034abce1bc05e48a15373d21386dfbbcdaf42ad580f8a68b082ede29660b7a"
+    },
+    "preview.webp": {
+      "width": 7008,
+      "height": 104,
+      "sha256": "7168d2a1acfb2f3b2f9572e35a5576274b204ea4c93958ee536f3ef72d8b301d"
+    }
+  }
+}

@@ -13,6 +13,7 @@ for state, indexes, durations in [
     ('jumping', [(4,i) for i in range(5)], [140]*4+[280]),
     ('waiting', [(6,i) for i in range(6)], [150]*5+[260]),
     ('typing', [(7,i) for i in range(6)], [120]*5+[220]),
+    ('review', [(8,i) for i in range(6)], [150]*5+[280]),
     ('look', [(9+i//8,i%8) for i in range(16)], [200]*16),
 ]:
     frames=[]

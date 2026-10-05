@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "atlas_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
+  "atlas_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
   "method": "4x SVG render; lower-face ink connects both moving locks; exterior-only skin border is limited to the chin arc with flat ends; zero ink inside opaque cheeks or beyond either hair anchor (0.8 grid raster tolerance)",
   "checks": [
     {

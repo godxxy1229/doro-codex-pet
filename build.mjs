@@ -7,7 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import { CELL, PIVOTS, ROWS, LOOK, framePose } from './src/poses.mjs';
-import { ORIGINAL_JAW } from './tools/rig-parts.mjs';
+import { ORIGINAL_JAW, RIGHT_HAIR_UNDERSIDE } from './tools/rig-parts.mjs';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const rig = fs.readFileSync(path.join(root, 'src/doro-rig.svg'), 'utf8');
@@ -47,10 +47,11 @@ export function frameSvg(pose) {
     s = s.replace('<g id="bangs"', `${lashes}<g id="bangs"`);
   }
   if (pose.fixedJaw) {
-    // Remove only the original moving subpath, not its fixed replacement.
+    // Separate the facial chin from the merged stroke, retaining the original
+    // underside of the moving right lock.
     const pattern = `q5-9 7-21${ORIGINAL_JAW}`;
     if (!s.includes(pattern)) throw new Error('Original moving jaw contour not found.');
-    s = s.replace(pattern, 'q5-9 7-21');
+    s = s.replace(pattern, `q5-9 7-21${RIGHT_HAIR_UNDERSIDE}`);
     const lockPoint = (id, x, y) => {
       const [cx, cy] = PIVOTS[id], a = (pose.parts?.[id]?.r ?? 0) * Math.PI / 180;
       return [f2(cx + (x - cx) * Math.cos(a) - (y - cy) * Math.sin(a)),

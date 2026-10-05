@@ -1,13 +1,9 @@
 {
   "ok": true,
-  "atlas_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
-  "removed_original_fringe_remnant": "M295.3,413.6... in the original bangs-strands layer (M148 207... in the optimized rig)",
-  "fringe_remnant_absent_from_generated_rig": true,
-  "independent_visual_review_notes": "Reviewers flagged ambiguous short upper-eye strokes. Enlarged per-layer renders with lashes, backing contours, or both eyes and lashes hidden identify the remaining short arcs as the moving eye rims on exposed skin. The user-marked detached horizontal stroke in the pink fringe is removed; actual eye rims and strand outlines are retained.",
-  "jaw_review_notes": "Ambiguous dark strokes beneath the left lock in typing crops are the pre-existing body/paw outlines. The isolated chin border passes all 43 endpoint/cheek/connection checks; only chin border and removed fringe stroke pixels changed.",
-  "reviewer_reports": [
-    "blind-jaw-reviewer-1.json",
-    "blind-jaw-reviewer-2.json",
-    "blind-jaw-reviewer-3.json"
-  ]
+  "atlas_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
+  "restored_hair_curve": "Original underside only, carried by the existing right side-lock transform. Chin masks and eyebrow-remnant removal preserved.",
+  "review_iris": "Measured pink intrusion in magnified iris drops from 183 and 11 pixels at 4x in frames 4 and 5 to zero in every frame.",
+  "typing": "Stationary crease hidden in all six frames. First pressing forepaw uses the user-selected -20-degree pose with the key contact unchanged.",
+  "independent_review": "Three reviewers confirm readable directions, connected hair contours and native-size attached paws. All noted a small rounded upper body-outline endpoint in the enlarged first typing frame.",
+  "parent_assessment": "The enlarged endpoint is the original body separator stroke starting at (110,311), unchanged by the paw rotation. It is not a detached paw component or white-fill gap. Keep the explicitly selected -20-degree candidate; both native forepaws connect and touch their intended keys."
 }

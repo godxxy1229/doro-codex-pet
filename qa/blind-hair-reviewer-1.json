@@ -1,0 +1,100 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's eyes and mouth sit toward the screen-right side of the hair opening; B's landmarks sit toward screen-left beneath the fringe."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's eye-and-mouth group sits left relative to the fringe center, while B's group sits farther right."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's face sits toward the left hair edge; B's facial landmarks sit toward the right side lock."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's eyes and mouth occupy the right side of the bang opening, while B's occupy its left side."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's facial landmarks sit left of the fringe center; B's landmarks sit to the right."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's face sits closer to the right side lock, while B's facial landmarks sit farther left beneath the bangs."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "The displacement is small but readable: A's eyes and mouth sit left relative to the bang center; B's sit right."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eyes and mouth sit higher within the hair opening; B's landmarks sit lower beneath the bangs."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eye pair and mouth sit higher relative to the fringe and side locks; B's eye pair and mouth sit lower."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down",
+      "reason": "A's facial landmarks sit higher against the bangs, while B's sit lower within the opening."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes and mouth sit a little lower relative to the hair opening; B's corresponding landmarks sit higher."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A's face sits low beneath the fringe; B's eyes and mouth sit higher within the hair opening."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "up",
+      "B": "down",
+      "reason": "A's facial landmarks sit higher relative to the bangs; B's eyes and mouth sit lower."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eye pair and mouth sit lower within the opening; B's sit higher relative to the fringe."
+    }
+  ],
+  "notes": {
+    "method": "Fresh independent visual judgment from the regenerated supplied direction panels and typing images. No artwork source, answer key, or other reviewers' verdicts were consulted.",
+    "final_direction_scope": "Reinspected directions-1.png through directions-4.png after regeneration; A/B assignments were judged from the new images.",
+    "direction_readability": "All fourteen pairs were readable. Horizontal-7 and vertical-4 have relatively small displacement but still suggest the stated directions.",
+    "anonymous_joins": "The unchanged joins-1.png through joins-3.png were inspected previously, covering Join 1 through Join 43. No visible open contour gap, detached hair tip, or obvious pink hair intrusion into the white cheek was observed.",
+    "review_frames": "The unchanged native review/00.png through 05.png were inspected previously. The visible magnified iris remained lavender with a pale highlight; no isolated pink patch within that iris or visible cheek-to-hair contour gap was observed.",
+    "final_typing_native": "Freshly inspected final native frames/running/00.png. Both typing forepaws remain attached to the body and visibly reach over the keyboard. No disconnected paw or conspicuous bend/kink reads at native size.",
+    "final_typing_enlarged": "Freshly inspected qa/typing-first-frame-before-after-20261006.png. In the After crop, the upper inner outline of the screen-left typing forepaw ends in a short dark rounded cap/stub below the chest. This is slight contour roughness at the enlarged scale; the filled forepaw remains attached and the outline does not read as a detached paw at native size. No larger final forepaw defect was observed.",
+    "limitations": "The final typing judgment freshly covers running/00.png and the supplied enlarged comparison; regenerated running/01.png through 05.png were not freshly inspected in this pass. Native frames are small, and the enlarged crop and anonymous joins are pixelated. Findings concern visible appearance at the supplied sizes."
+  },
+  "reviewed_canonical_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
+  "reviewed_public_sha256": "d699880f41d165072bfc77bff6f24f4363c1fec3d02efab7337ce113c592d4ac"
+}

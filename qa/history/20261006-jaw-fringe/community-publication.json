@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "id": "doro-svg",
+  "page": "https://codex-pets.net/#/pets/doro-svg",
+  "download_url": "/api/pets/doro-svg/download?v=1791227065284",
+  "spritesheet_url": "https://codex-pets.net/assets/pets/v/1791227065284/doro-svg/spritesheet.webp",
+  "public_webp_sha256": "8c014ddad3bb2166321a5c5686f5b2ca4c73b007182b862b72a022dd1654c4a0",
+  "canonical_webp_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
+  "remote_sheet_bytes_equal": true,
+  "public_zip_integrity_passed": true,
+  "public_zip_sheet_bytes_equal": true,
+  "public_manifest_equal": true,
+  "english_install_description_preserved": true,
+  "name_description_tags_owner_preserved": true,
+  "github_asset_bytes_equal": true,
+  "native_canonical_bytes_equal": true,
+  "all_73_animation_cells_rgba_equal_across_native_and_public": true,
+  "community_assets": {
+    "previewUrl": {
+      "bytes_equal": true,
+      "sha256": "7168d2a1acfb2f3b2f9572e35a5576274b204ea4c93958ee536f3ef72d8b301d"
+    },
+    "posterUrl": {
+      "bytes_equal": true,
+      "sha256": "93034abce1bc05e48a15373d21386dfbbcdaf42ad580f8a68b082ede29660b7a"
+    },
+    "shareImageUrl": {
+      "bytes_equal": true,
+      "sha256": "e699d4323cb66e295699723c1b9eb88fbd75d2043b86ee06fb770d13c886db71"
+    }
+  },
+  "temporary_api_key": {
+    "name": "Doro jaw and fringe repair",
+    "created_with_user_confirmation": true,
+    "revoked_immediately_after_upload": true,
+    "revocation_verified_in_settings": true,
+    "persisted_to_file_or_log": false
+  },
+  "proof_screenshot": "community-published-jaw-fringe-20261006.png"
+}

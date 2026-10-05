@@ -84,7 +84,7 @@ function faceDetails(p) {
 }
 function fixJaw(p) { p.show.push('jaw-contour', 'jaw-skin-fill'); p.fixedJaw = true; return p; }
 
-function typingContact(p, key) {
+function typingContact(p, key, rotation = 0) {
   const id = `leg-front-${key.hand}`;
   const contact = key.hand === 'left' ? [96, 337] : [185, 361];
   const a = 12 * Math.PI / 180;
@@ -92,7 +92,10 @@ function typingContact(p, key) {
   const contactY = key.y - 3;
   const target = [128 + (key.x - 128) * cos(a) - (contactY - 342) * sin(a),
     342 + (key.x - 128) * sin(a) + (contactY - 342) * cos(a)];
-  add(p, id, { tx: target[0] - contact[0], ty: target[1] - contact[1] });
+  const [cx, cy] = PIVOTS[id], theta = rotation * Math.PI / 180;
+  const rotated = [cx + (contact[0]-cx)*cos(theta) - (contact[1]-cy)*sin(theta),
+    cy + (contact[0]-cx)*sin(theta) + (contact[1]-cy)*cos(theta)];
+  add(p, id, { r: rotation, tx: target[0] - rotated[0], ty: target[1] - rotated[1] });
 }
 // 옆머리: 양쪽이 바깥(+)/안쪽(−)으로 함께 흔들림
 function hair(p, outward) {
@@ -196,10 +199,12 @@ const STATES = {
   // 키보드 타이핑: 앞발 두 개가 번갈아 누르고 누른 키가 밝아짐. 머리를 숙여 키보드를 봄.
   running(i) {
     const p = pose();
+    // The stationary shoulder crease must not cut across the moving forepaw.
+    p.hide.push('crease-fl');
     const key = TYPING_KEYS[i];
     p.show.push('keyboard', key.id);
     const leftDown = key.hand === 'left';
-    typingContact(p, key);
+    typingContact(p, key, i === 0 ? -20 : 0);
     add(p, leftDown ? 'leg-front-right' : 'leg-front-left', { r: leftDown ? 8 : 10, ty: leftDown ? -13 : -12 });
     add(p, 'doro', { r: -2, sy: 0.99 });
     add(p, 'head', { ty: 9 + (leftDown ? 3 : 0), r: leftDown ? -4 : -2 });
@@ -221,6 +226,8 @@ const STATES = {
     add(p, 'magnifier', { r: 2.5 * sweep });
     add(p, 'lens-view', { r: -2.5 * sweep });
     gaze(p, 5 * sweep, -1);
+    // Keep the lower fringe above the iris as the magnified eye scans sideways.
+    p.fringeYScale = 0.9;
     add(p, 'head', { r: [-2, -1, 0.5, 2.5, 2, 0][i] });
     add(p, 'doro', { r: -1.5 });
     hair(p, 1.5 * sweep);

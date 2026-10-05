@@ -1,0 +1,75 @@
+{
+  "ok": true,
+  "atlas_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
+  "method": "4x SVG renders: count pink paint within the unobstructed iris fill mask inside the transformed lens circle. Verify the stationary crease is hidden on all six typing poses; native-size and enlarged forepaw shape is independently reviewed.",
+  "review": [
+    {
+      "frame": 1,
+      "before_pink_pixels": 0,
+      "after_pink_pixels": 0,
+      "iris_reference_pixels": 5790
+    },
+    {
+      "frame": 2,
+      "before_pink_pixels": 0,
+      "after_pink_pixels": 0,
+      "iris_reference_pixels": 5782
+    },
+    {
+      "frame": 3,
+      "before_pink_pixels": 0,
+      "after_pink_pixels": 0,
+      "iris_reference_pixels": 5794
+    },
+    {
+      "frame": 4,
+      "before_pink_pixels": 183,
+      "after_pink_pixels": 0,
+      "iris_reference_pixels": 5774
+    },
+    {
+      "frame": 5,
+      "before_pink_pixels": 11,
+      "after_pink_pixels": 0,
+      "iris_reference_pixels": 5801
+    },
+    {
+      "frame": 6,
+      "before_pink_pixels": 0,
+      "after_pink_pixels": 0,
+      "iris_reference_pixels": 5789
+    }
+  ],
+  "typing": [
+    {
+      "frame": 1,
+      "stationary_shoulder_crease_hidden": true,
+      "pressing_paw_rotation": -20
+    },
+    {
+      "frame": 2,
+      "stationary_shoulder_crease_hidden": true,
+      "pressing_paw_rotation": 0
+    },
+    {
+      "frame": 3,
+      "stationary_shoulder_crease_hidden": true,
+      "pressing_paw_rotation": 0
+    },
+    {
+      "frame": 4,
+      "stationary_shoulder_crease_hidden": true,
+      "pressing_paw_rotation": 0
+    },
+    {
+      "frame": 5,
+      "stationary_shoulder_crease_hidden": true,
+      "pressing_paw_rotation": 0
+    },
+    {
+      "frame": 6,
+      "stationary_shoulder_crease_hidden": true,
+      "pressing_paw_rotation": 0
+    }
+  ]
+}

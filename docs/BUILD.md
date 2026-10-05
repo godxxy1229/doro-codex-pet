@@ -58,14 +58,21 @@ and steps at the underlay joins.
 An arc mask with flat ends limits the border to the chin itself; the side edges
 of the skin union cannot extend past either moving hair-lock anchor.
 The same contour repair also applies to Idle, Waving, and Jumping, as requested.
+The original right-lock underside is retained separately from the facial chin;
+both used to share one stroke subpath.
 Typing alternates paws across the upper, middle, and lower keyboard rows;
-the active key and paw contact share the same coordinates.
+the active key and paw contact share the same coordinates. The stationary
+shoulder crease is hidden, and the first pressing paw rotates -20 degrees
+with its key contact fixed. Review shortens the lower fringe to 90%, keeping
+pink hair paint out of the magnified iris.
 
-The later fringe-remnant repair affects every state. `qa/artwork-scope.json`
-checks all RGBA pixels against the previous atlas and renderer: only the old
-chin border and the removed fringe stroke may change, including the review lens.
+`qa/hair-underside-audit.json` checks every RGBA cell and the backed-up renderer:
+only the restored hair curve and requested review/typing changes may differ.
+Movement and Failed remain pixel-identical. Earlier repair reports are archived
+under `qa/history/` with their reviewed hashes.
 `qa/face-typing-audit.json` checks iris visibility, paw contact, and frame timings.
-Three independent blind reviews of all 16 directions are in `qa/blind-jaw-*.json`.
+`qa/review-typing-artifact-audit.json` checks for pink paint inside the lens iris.
+Three independent blind reviews of all 16 directions are in `qa/blind-hair-*.json`.
 Before/after loops are in `previews/comparison/`.
 `qa/contour-audit.json` checks both jaw-to-hair connections in all 43 repaired poses.
 

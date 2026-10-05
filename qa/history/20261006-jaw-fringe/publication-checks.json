@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "checks": {
+    "canonical_reports_passed": true,
+    "native_manifest_preserved": true,
+    "native_sheet_identical": true,
+    "neutral_equals_current_first_idle": true,
+    "public_animation_pixels_equal_canonical": true,
+    "directions_blind_reviewed": true,
+    "jaw_connections_and_exterior_only_ink_passed": true,
+    "jaw_hair_endpoint_bounds_passed": true,
+    "pixels_outside_chin_and_fringe_remnant_preserved": true,
+    "community_remote_sheet_identical": true,
+    "community_zip_identical": true,
+    "community_assets_identical": true,
+    "github_asset_identical": true,
+    "official_installer_passed": true,
+    "temporary_key_revocation_verified": true
+  },
+  "canonical_webp_sha256": "95c819de65cb7280e5f5a63482f22dc7c65b33a77f861455207fbfc2989f4fa5",
+  "prepared_public_webp_sha256": "8c014ddad3bb2166321a5c5686f5b2ca4c73b007182b862b72a022dd1654c4a0",
+  "published_public_webp_sha256": "8c014ddad3bb2166321a5c5686f5b2ca4c73b007182b862b72a022dd1654c4a0"
+}

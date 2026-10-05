@@ -5,6 +5,9 @@ import { TYPING_KEYS } from '../src/poses.mjs';
 const INK = '#1f1519';
 // Original jaw subpath lives in the right hair group; revised faces keep it on the head.
 export const ORIGINAL_JAW = 'M187 266c-8 1-14 7-21 8l-14-1-29 1q-22-2-42-7';
+// The first curve in that merged subpath belongs to the pink hair's underside.
+// It must remain on the moving lock when the facial chin is replaced.
+export const RIGHT_HAIR_UNDERSIDE = 'M187 266c-8 1-14 7-21 8';
 
 // 밑면 클립
 // hc: 머리카락 밑면 — 정수리·관자놀이 이음새(y<215)만. 피부 밑면이 그 위에 그려지므로 얼굴이 있는 곳은 피부가 덮고,

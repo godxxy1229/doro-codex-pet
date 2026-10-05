@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "independent_clean_build": {
+    "src/doro-rig.svg": true,
+    "final/spritesheet.png": true,
+    "final/spritesheet.webp": true,
+    "package/spritesheet.webp": true,
+    "package/pet.json": true
+  },
+  "canonical_png_sha256": "280525c5847f749bb5c7122bdc6d7570d7a24a33b80c05bc3b4c8c83d376107c",
+  "public_webp_sha256": "8c014ddad3bb2166321a5c5686f5b2ca4c73b007182b862b72a022dd1654c4a0"
+}
