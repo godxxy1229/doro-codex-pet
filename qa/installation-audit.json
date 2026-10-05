@@ -1,4 +1,11 @@
 {
-  "ok": false,
-  "status": "pending_public_package_update_before_installer_test"
+  "ok": true,
+  "method": "Official codex-pets 0.3.0 addPet installer with an explicit isolated codexDirectory",
+  "id": "doro-svg",
+  "description": "An unofficial Doro companion for Codex. https://github.com/godxxy1229/doro-codex-pet",
+  "public_manifest_equal": true,
+  "spritesheet_bytes_equal": true,
+  "webp_sha256": "470a5cd0d119990c668a100662ec8d1b2095e0866ba63cc80fc61c4424f498c2",
+  "installation_directory": ".publication-work/doro-face-test-codex/pets/doro-svg",
+  "isolated_installation_does_not_modify_native_pet": true
 }
