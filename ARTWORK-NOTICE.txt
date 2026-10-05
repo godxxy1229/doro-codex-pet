@@ -1,0 +1,10 @@
+Doro is a fan interpretation of Dorothy from GODDESS OF VICTORY: NIKKE.
+Official references: https://nikke-en.com/ and https://www.shiftup.co.kr/
+
+This is an unofficial fan project, with no affiliation with or endorsement
+from NIKKE, SHIFT UP, or the original character's rights holders.
+The original character's rights remain with their respective owners.
+
+The reference artwork was supplied for this project. This repository contains
+the vector redraw and animation work; it does not claim ownership of the
+original character or grant a license to the underlying character artwork.

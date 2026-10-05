@@ -1,0 +1,18 @@
+{
+  "pairs": [
+    {"pair":"horizontal-1","A":"screen-right","B":"screen-left","reason":"A's eyes and mouth sit farther right under the bangs; B's facial features sit farther left."},
+    {"pair":"horizontal-2","A":"screen-right","B":"screen-left","reason":"A's face shifts toward the right edge of the head; B's face shifts toward the left edge."},
+    {"pair":"horizontal-3","A":"screen-right","B":"screen-left","reason":"A's right eye crowds the right-side hair while B's eye-and-mouth cluster sits farther left."},
+    {"pair":"horizontal-4","A":"screen-left","B":"screen-right","reason":"A's eyes and mouth are displaced left within the head; B's features are displaced right."},
+    {"pair":"horizontal-5","A":"screen-right","B":"screen-left","reason":"A's mouth and eyes sit right beneath the fringe; B's features sit left beneath the fringe."},
+    {"pair":"horizontal-6","A":"screen-right","B":"screen-left","reason":"A's face is visibly closer to the right-side hair; B's face is farther toward screen-left."},
+    {"pair":"horizontal-7","A":"screen-left","B":"screen-right","reason":"A's eyes and mouth sit left of the head's center; B's eye-and-mouth cluster shifts right."},
+    {"pair":"vertical-1","A":"up","B":"down","reason":"A's eyes and mouth are raised within the head; B's features sit lower, near the bottom of the face."},
+    {"pair":"vertical-2","A":"up","B":"down","reason":"A's facial features sit higher beneath the fringe; B's eyes and mouth are lower."},
+    {"pair":"vertical-3","A":"down","B":"up","reason":"A's eye-and-mouth cluster sits low in the face; B's cluster is visibly raised."},
+    {"pair":"vertical-4","A":"down","B":"up","reason":"A's eyes and mouth are lower in the head; B's features are raised closer to the fringe."},
+    {"pair":"vertical-5","A":"up","B":"down","reason":"A's eyes and mouth sit higher; B's features are displaced downward with the mouth near the lower face."},
+    {"pair":"vertical-6","A":"up","B":"down","reason":"A's face is raised toward the fringe; B's eyes and mouth sit lower in the head."},
+    {"pair":"vertical-7","A":"down","B":"up","reason":"A's eyes and mouth sit lower relative to the hair; B's facial features sit higher."}
+  ]
+}

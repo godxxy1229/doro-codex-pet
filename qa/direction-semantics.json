@@ -1,0 +1,118 @@
+{
+  "review_basis": "Final encoded spritesheet.webp, qa/direction-qa.png and 2x native crops of rows 9-10 reviewed against idle frame 0. Doro has drawn anime eyes without sclera, so gaze is expressed as a head turn: the whole face-feature set (eyes, lashes, mouth, blush) moves inside the fixed face, the head group follows by 0.4x with a small tilt, side hair and ribbon tails lag the other way, and the body and legs stay anchored.",
+  "alpha_review": "Transparent rows reported near y=176-184 are the open spaces between the separate legs below the body, continuous with the outside background. The face, hair and body surfaces have no accidental holes: when a side-hair lock swings outward, the cheek it uncovers is filled with a face-skin copy shifted outward (so the cheek continues in skin colour) and the crown/temple seam with a static hair copy; both underlays are switched off when the lock swings inward so no colour shows outside the outline.",
+  "directions": [
+    {
+      "label": "000",
+      "expected": "up",
+      "observed": "up",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 0.0px horizontally (centered) and 10.6px up from idle 0 inside the face (blush follows at 0.6x); head tilts +0.0 deg and shifts with them; body, legs and feet stay on the idle baseline. Irises rise under the bangs while staying visible; lower face shows more empty skin."
+    },
+    {
+      "label": "022.5",
+      "expected": "up-right",
+      "observed": "up-right",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 6.9px right and 9.8px up from idle 0 inside the face (blush follows at 0.6x); head tilts +1.5 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "045",
+      "expected": "up-right",
+      "observed": "up-right",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 12.8px right and 7.5px up from idle 0 inside the face (blush follows at 0.6x); head tilts +2.8 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "067.5",
+      "expected": "up-right",
+      "observed": "up-right",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 16.8px right and 4.1px up from idle 0 inside the face (blush follows at 0.6x); head tilts +3.7 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "090",
+      "expected": "right",
+      "observed": "right",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 18.1px right and 0.0px vertically (level) from idle 0 inside the face (blush follows at 0.6x); head tilts +4.0 deg and shifts with them; body, legs and feet stay on the idle baseline. Right eye moves toward the right side hair, left eye moves to the face centre."
+    },
+    {
+      "label": "112.5",
+      "expected": "down-right",
+      "observed": "down-right",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 16.8px right and 5.2px down from idle 0 inside the face (blush follows at 0.6x); head tilts +3.7 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "135",
+      "expected": "down-right",
+      "observed": "down-right",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 12.8px right and 9.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts +2.8 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "157.5",
+      "expected": "down-right",
+      "observed": "down-right",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 6.9px right and 12.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts +1.5 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "180",
+      "expected": "down",
+      "observed": "down",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 0.0px horizontally (centered) and 13.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts +0.0 deg and shifts with them; body, legs and feet stay on the idle baseline. Irises sit fully below the bangs with the mouth near the chin line."
+    },
+    {
+      "label": "202.5",
+      "expected": "down-left",
+      "observed": "down-left",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 6.9px left and 12.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts -1.5 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "225",
+      "expected": "down-left",
+      "observed": "down-left",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 12.8px left and 9.6px down from idle 0 inside the face (blush follows at 0.6x); head tilts -2.8 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "247.5",
+      "expected": "down-left",
+      "observed": "down-left",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 16.8px left and 5.2px down from idle 0 inside the face (blush follows at 0.6x); head tilts -3.7 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "270",
+      "expected": "left",
+      "observed": "left",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 18.1px left and 0.0px vertically (level) from idle 0 inside the face (blush follows at 0.6x); head tilts -4.0 deg and shifts with them; body, legs and feet stay on the idle baseline. Left eye moves toward the left side hair, right eye moves toward the centre."
+    },
+    {
+      "label": "292.5",
+      "expected": "up-left",
+      "observed": "up-left",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 16.8px left and 4.1px up from idle 0 inside the face (blush follows at 0.6x); head tilts -3.7 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "315",
+      "expected": "up-left",
+      "observed": "up-left",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 12.8px left and 7.5px up from idle 0 inside the face (blush follows at 0.6x); head tilts -2.8 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    },
+    {
+      "label": "337.5",
+      "expected": "up-left",
+      "observed": "up-left",
+      "verdict": "pass",
+      "evidence": "Eyes, lashes and mouth shift 6.9px left and 9.8px up from idle 0 inside the face (blush follows at 0.6x); head tilts -1.5 deg and shifts with them; body, legs and feet stay on the idle baseline."
+    }
+  ]
+}

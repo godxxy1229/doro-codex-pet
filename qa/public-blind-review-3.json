@@ -1,0 +1,18 @@
+{
+  "pairs": [
+    {"pair": "horizontal-1", "A": "screen-right", "B": "screen-left", "reason": "A's eyes and mouth shift right within the hair frame; B's facial features shift left."},
+    {"pair": "horizontal-2", "A": "screen-right", "B": "screen-left", "reason": "A's face is displaced toward the right hair edge; B's face is displaced toward the left edge."},
+    {"pair": "horizontal-3", "A": "screen-right", "B": "screen-left", "reason": "A's eye and mouth group sits farther right; B's sits farther left."},
+    {"pair": "horizontal-4", "A": "screen-left", "B": "screen-right", "reason": "A's facial features gather on the left side of the head; B's gather on the right."},
+    {"pair": "horizontal-5", "A": "screen-right", "B": "screen-left", "reason": "A's mouth and eyes are shifted right under the fringe; B's are shifted left."},
+    {"pair": "horizontal-6", "A": "screen-right", "B": "screen-left", "reason": "A's face moves toward the right hair edge; B's face moves toward the left."},
+    {"pair": "horizontal-7", "A": "screen-left", "B": "screen-right", "reason": "A's eyes and mouth sit left within the head outline; B's sit right."},
+    {"pair": "vertical-1", "A": "up", "B": "down", "reason": "A's eyes and mouth sit higher beneath the fringe; B's facial features sit lower, near the chin."},
+    {"pair": "vertical-2", "A": "up", "B": "down", "reason": "A's face is raised under the bangs; B's eyes and mouth are lowered."},
+    {"pair": "vertical-3", "A": "down", "B": "up", "reason": "A's eyes and mouth sit low in the face; B's facial features are lifted."},
+    {"pair": "vertical-4", "A": "down", "B": "up", "reason": "A's eye and mouth group is lower; B's is visibly higher under the fringe."},
+    {"pair": "vertical-5", "A": "up", "B": "down", "reason": "A's eyes and mouth are higher within the head; B's face is lowered toward the chin."},
+    {"pair": "vertical-6", "A": "up", "B": "down", "reason": "A's facial features sit high beneath the bangs; B's sit lower with the mouth near the lower face edge."},
+    {"pair": "vertical-7", "A": "down", "B": "up", "reason": "A's eye and mouth group sits lower; B's facial features are raised."}
+  ]
+}
