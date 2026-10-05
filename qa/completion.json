@@ -1,6 +1,6 @@
 {
-  "ok": false,
-  "status": "native_updated_ready_for_publication",
+  "ok": true,
+  "status": "complete_native_github_and_community_verified",
   "repository": "https://github.com/godxxy1229/doro-codex-pet",
   "community_page": "https://codex-pets.net/#/pets/doro-svg",
   "canonical_png_sha256": "6cf4a1f8f511dfb8e680fb787739d908df458a9f95b8c09655c82c124d3ba981",
@@ -19,6 +19,13 @@
     "native_artwork_identical": true,
     "jaw_connections_passed": 43,
     "jaw_ink_inside_solid_face_pixels": 0,
-    "jaw_ink_past_hair_anchors": 0
-  }
+    "jaw_ink_past_hair_anchors": 0,
+    "community_sheet_and_zip_identical": true,
+    "community_metadata_preserved": true,
+    "official_isolated_installer_passed": true,
+    "github_asset_identical": true,
+    "temporary_api_key_revoked": true,
+    "all_73_animation_cells_identical_across_three_locations": true
+  },
+  "community_download_url": "/api/pets/doro-svg/download?v=1791229618507"
 }

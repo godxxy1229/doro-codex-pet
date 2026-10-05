@@ -1,5 +1,11 @@
 {
-  "ok": false,
-  "status": "pending_publication_of_current_atlas",
-  "prepared_public_webp_sha256": "d699880f41d165072bfc77bff6f24f4363c1fec3d02efab7337ce113c592d4ac"
+  "ok": true,
+  "method": "Official codex-pets 0.3.0 addPet installer with an explicit isolated codexDirectory",
+  "id": "doro-svg",
+  "description": "An unofficial Doro companion for Codex. https://github.com/godxxy1229/doro-codex-pet",
+  "public_manifest_equal": true,
+  "spritesheet_bytes_equal": true,
+  "webp_sha256": "d699880f41d165072bfc77bff6f24f4363c1fec3d02efab7337ce113c592d4ac",
+  "installation_directory": ".publication-work/doro-hair-test-codex/pets/doro-svg",
+  "isolated_installation_does_not_modify_native_pet": true
 }

@@ -1,5 +1,40 @@
 {
-  "ok": false,
-  "status": "pending_publication_of_current_atlas",
-  "prepared_public_webp_sha256": "d699880f41d165072bfc77bff6f24f4363c1fec3d02efab7337ce113c592d4ac"
+  "ok": true,
+  "id": "doro-svg",
+  "page": "https://codex-pets.net/#/pets/doro-svg",
+  "download_url": "/api/pets/doro-svg/download?v=1791229618507",
+  "spritesheet_url": "https://codex-pets.net/assets/pets/v/1791229618507/doro-svg/spritesheet.webp",
+  "public_webp_sha256": "d699880f41d165072bfc77bff6f24f4363c1fec3d02efab7337ce113c592d4ac",
+  "canonical_webp_sha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
+  "remote_sheet_bytes_equal": true,
+  "public_zip_integrity_passed": true,
+  "public_zip_sheet_bytes_equal": true,
+  "public_manifest_equal": true,
+  "english_install_description_preserved": true,
+  "name_description_tags_owner_preserved": true,
+  "github_asset_bytes_equal": true,
+  "native_canonical_bytes_equal": true,
+  "all_73_animation_cells_rgba_equal_across_native_and_public": true,
+  "community_assets": {
+    "previewUrl": {
+      "bytes_equal": true,
+      "sha256": "7e727d6d2b95320d383cfc8cc25ca25153dc7ba5011073401d74765644657600"
+    },
+    "posterUrl": {
+      "bytes_equal": true,
+      "sha256": "b61191af9e0baffda25403bc7b470a045062884d67003bd7bccaba09f47f5e90"
+    },
+    "shareImageUrl": {
+      "bytes_equal": true,
+      "sha256": "5d73c27e0699fc4ae96a099dfdf0ca4a8120c7eb4cc33d462aa03a52c780ebde"
+    }
+  },
+  "temporary_api_key": {
+    "name": "Doro hair lens and paw repair",
+    "created_with_user_confirmation": true,
+    "revoked_immediately_after_upload": true,
+    "revocation_verified_in_settings": true,
+    "persisted_to_file_or_log": false
+  },
+  "browser_proof": "qa/community-published-hair-lens-paw-20261006.png"
 }
