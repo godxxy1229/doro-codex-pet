@@ -29,7 +29,6 @@ bash tools/validate.sh --gate
 
 On Windows, use Git Bash with the same Windows home directory as Codex.
 The validation tools are external dependencies and are not redistributed here.
-See [AGENTS.md](../AGENTS.md) for the blind direction-review procedure.
 
 Stored QA reports identify the atlas hashes they reviewed. The published
 community atlas also has a separate package report and blind direction review.
