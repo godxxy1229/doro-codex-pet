@@ -74,6 +74,3 @@ under `qa/history/` with their reviewed hashes.
 Three independent blind reviews of all 16 directions are in `qa/blind-hair-*.json`.
 Before/after loops are in `previews/comparison/`.
 `qa/contour-audit.json` checks both jaw-to-hair connections in all 43 repaired poses.
-
-Detailed rig notes: [BUILD.ko.md](BUILD.ko.md).
-Original vector notes: [ORIGINAL.ko.md](ORIGINAL.ko.md).
