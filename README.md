@@ -2,7 +2,7 @@
 
 An unofficial Doro companion for Codex.
 
-[![View on Codex Pets](assets/codex-pets.svg)](https://codex-pets.net/#/pets/doro-svg)
+[![Codex Pets](https://img.shields.io/badge/Codex%20Pets-Doro-f5c5cf?style=for-the-badge)](https://codex-pets.net/#/pets/doro-svg)
 
 ## Install
 
